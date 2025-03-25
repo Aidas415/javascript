@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "marksaverage":"node --watch ./js/marksaverage.js",
     "typeof":"node --watch ./js/typeof.js",
     "multiplay":"node --watch ./js/multiplay.js",
     "text":"node --watch ./js/text-size.js",

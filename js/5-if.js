@@ -19,7 +19,8 @@ console.log('START');
 
 if (4 > 2) {
     console.log('--- taip');
-} else {
+} 
+else {
     console.log('--- ne');
 }
 
@@ -31,7 +32,7 @@ const temp = -2;
 
 if (temp >= 18) {
     console.log('Silta 🌞');
-} else {
+} else{
     console.log('Salta 🥶');
 }
 
@@ -56,13 +57,9 @@ const temp3 = -55;
 
 if (temp3 < 0) {
     console.log('Šalta 🥶');
-}
-
-if (temp3 < 10) {
+} if (temp3 < 10) {
     console.log('Meh 👀');
-}
-
-if (temp3 < 22) {
+} if (temp3 < 22) {
     console.log('Šilta 🌞');
 } else {
     console.log('Karšta 😎');

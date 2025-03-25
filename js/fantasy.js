@@ -17,8 +17,8 @@ console.log(text[4] + text[3] + text[2]
 
     console.log(`  (1)`);
 
-    /*
-Sukurti 3 kintamuosius su skaičiaus tipo reikšmėmis.
+/*
+1. Sukurti 3 kintamuosius su skaičiaus tipo reikšmėmis.
 Po kiekvieno jų inicijavimo išvesti i console
 */
 let sv = 86;
@@ -45,7 +45,7 @@ console.log(amzius2);
 console.log(`  (2)`);
 
 /*
-Sukurti 3 kintamuosius su teksto tipo reikšmėmis.
+2. Sukurti 3 kintamuosius su teksto tipo reikšmėmis.
 Po kiekvieno jų inicijavimo išvesti į console
 */
 let vardas = '"Daiva"';
@@ -71,7 +71,7 @@ console.log(verte2);
 
 console.log(`  (3)`);
 /*
-Sukurti 3 sąrašo tipo kintamuosius su penkiomis 
+3. Sukurti 3 sąrašo tipo kintamuosius su penkiomis 
 skaičių tipo reikšmėmis.
 Po kiekvieno jų inicijavimo išvesti i console
 */
@@ -90,7 +90,7 @@ console.log(karsta);
 
 console.log('  (4)');
 /*
-Sukurti 3 sąrašo tipo kintamuosius su penkiomis 
+4. Sukurti 3 sąrašo tipo kintamuosius su penkiomis 
 teksto tipo reikšmėmis. 
 Po kiekvieno jų inicijavimo išvesti į console
 */
@@ -109,14 +109,14 @@ console.log(' II Veiksmai su kintamaisiais');
 
 console.log('  (1)');
 /*
-susumuoti visus skaičiaus tipo kintamuosius
+1. susumuoti visus skaičiaus tipo kintamuosius
 */
 suma = sv + ug + am;
 console.log(suma);
 
 console.log('  (2)');
 /*
-Sujungti visus teksto tipo kintamuosius taip, 
+2. Sujungti visus teksto tipo kintamuosius taip, 
 jog tarp jų būtų sudarytas tarpas
 */
 let vardas1 = 'Paulina';
@@ -127,7 +127,7 @@ console.log(vaikas);
 
 console.log('  (3)');
 /*
-Apskaičiuoti vertę iš sąrašų, kurių verčių tipas yra 
+3. Apskaičiuoti vertę iš sąrašų, kurių verčių tipas yra 
 skaičiai pagal pateiktą logiką:
 a) 1-2+3-4+5, 
 b) rezultatą išvesti į console
@@ -160,7 +160,7 @@ console.log(aritmetika3)
 console.log('  (4)');
 
 /*
-sujungti sąrašu vertes, kurių tipas yra tekstai
+4. sujungti sąrašu vertes, kurių tipas yra tekstai
 nuo sąrašo galo iki pradzios taip, jog tarp jų 
 būtų kablelis ir tarpas
 */
@@ -174,13 +174,13 @@ console.log(darzoves1);
 
 let i = 4;
 let darzoves = darzas[i] +', ';
-i -= 1;
+i--;
 darzoves += darzas[i] + ', ';
-i -= 1;
+i--;
 darzoves += darzas[i] + ', ';
-i -= 1;
+i--;
 darzoves += darzas[i] + ', ';
-i -= 1;
+i--;
 darzoves += darzas[i] + '.'
 console.log(darzoves);
 
@@ -196,6 +196,7 @@ j -= 1;
 darzoves2 += darzas[j] + '.'
 console.log(darzoves2);
 
+console.log(' III Kintamuju palyginimas');
 /*
 Priklausomai nuo sąlygos sukurkite 2 skirtingų reiksmių
 nurodyto tipo kintamuosius. Lygininat, jei rezulltatas
