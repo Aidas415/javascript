@@ -13,9 +13,7 @@ console.log(text[4] + text[3] + text[2]
 
     console.log('-----NAMU DARBAI-----');
 
-    console.log(' I Kintamuju inicijavimas');
-
-    console.log(`  (1)`);
+    console.log(' I. Kintamuju inicijavimas');
 
 /*
 1. Sukurti 3 kintamuosius su skaičiaus tipo reikšmėmis.
@@ -105,7 +103,7 @@ valiuta[1] + ', ir ' + valiuta[4] + ', ir ' + valiuta[2] + ', ir ' +
 valiuta[3] + '. Tai skirtingo laikotarpio Lietuvos ' + valiuta[0] + '.'  
 console.log(valiuta1);
 
-console.log(' II Veiksmai su kintamaisiais');
+console.log(' II. Veiksmai su kintamaisiais');
 
 console.log('  (1)');
 /*
@@ -196,7 +194,9 @@ j -= 1;
 darzoves2 += darzas[j] + '.'
 console.log(darzoves2);
 
-console.log(' III Kintamuju palyginimas');
+console.clear();
+
+console.log(' III. Kintamuju palyginimas');
 /*
 Priklausomai nuo sąlygos sukurkite 2 skirtingų reiksmių
 nurodyto tipo kintamuosius. Lygininat, jei rezulltatas
@@ -204,53 +204,124 @@ tenkina palyginimo sąlygą (nurodytą žemiau), tai į console
 išvesti žodį "Pomidoras", o jei sąlyga nėra tenkinama,
 išvesti sakinį "Bandykite kitą kartą".
 */
+// 1. tarpusavyje palyginti skaičiaus tipo kintamuosius:
+//  a) kuris didesnis
+//  b) kuris mažesnis
+//  c) ar jie lygūs
+//  d) ar jie nelygūs
+//  e) kuris didesnis arba lygus
+//  f) kuris mažesnis arba lygus
+const kint1 = 7;
+const kint2 = 8;
+if (kint1 > kint2) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite kita karta');
+}
+if (kint1 < kint2) {
+    console.log('Pomidoras');
+}
+if (kint1 == kint2) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite kita karta');
+}
+if (kint1 != kint2) {
+    console.log('Pomidoras');
+}
+if (kint1 >= kint2) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite kita karta');
+}
+if (kint1 <= kint2) {
+    console.log('Pomidoras');
+} 
 
+// 2. išvesti teksto tipo kintamųjų ilgius
+const ilg1 = 'astronomija';
+const ilg2 = 'kosmosas';
+console.log(ilg1.length);
+console.log(ilg2.length);
 
-// tarpusavyje palyginti skaičiaus tipo kintamuosius:
-
+// 3.tarpusavyje palyginti teksto tipo kintamųjų ilgius:
 // a) kuris didesnis
+if (ilg1.length > ilg2.length) {
+    console.log('Zodis "astronomija" ilgesnis uz zodi "kosmosas"');
+}
+
 // b) kuris mažesnis
+if (ilg1.length < ilg2.length) {
+    console.log('Zodis "astronomija" trumpesnis uz zodi "kosmosas".');
+} else {
+    console.log('Zodis "kosmosas" trumpesnis uz zodi "astronomija".');
+}
+
 // c) ar jie lygūs
 // d) ar jie nelygūs
+if (ilg1.length == ilg2.length) {
+    console.log('Zodziu "astronomija" ir "kosmosas" ilgiai yra lygus.');
+} else {
+    console.log('Zodziu "astronomija" ir "kosmosas" ilgiai yra nelygus.');
+}
+
 // e) kuris didesnis arba lygus
-// f) kuris mažesnis arba lygus
+if (ilg1.length >= ilg2.length) {
+    console.log('Zodis "astronomija" yra ilgesnis arba lygus uz zodi "kosmosas".');
+}
 
+// f) kuris mažesnis arba lygus 
+if (ilg1.length <= ilg2.length) {
+    console.log('Zodis "astronomija" yra trumpesnis arba lygus uz zodi "kosmosas".');
+} else {
+    console.log('Zodis "kosmosas" yra trumpesnis arba lygus uz zodi "astronomija".');
+}
 
+// 2. išvesti sąrašo tipo kintamųjų ilgius
+const vnt = ['Mylia', 'Kilometras'];
+console.log(vnt[0].length);
+console.log(vnt[1].length);
 
-// išvesti teksto tipo kintamųjų ilg
-
-// tarpusavyje palyginti teksto tipo kintamųjų ilgius:
+// 3. tarpusavyje palyginti sąrašo tipo kintamųjų ilgius:
 
 // a) kuris didesnis
+if (vnt[0].length > vnt[1]) {
+    console.log('Zodis "Mylia" ilgesnis uz zodi "Kilometras".')
+} else {
+    console.log('Zodis "Kilometras" yra ilgesnis uz zodi "Mylia".');
+}
+
 // b) kuris mažesnis
+if (vnt[0].length < vnt[1].length) {
+    console.log('Zodis "Mylia" yra trumpesnis uz zodi "Kilometras".');
+}
+
 // c) ar jie lygūs
+if (vnt[0].length == vnt[1].length) {
+    console.log('Zodziu "Mylia" ir "Kilometras" ilgiai yra lygus.');
+} else {
+    console.log('Zodziu "Mylia" ir "Kilometras" ilgiai nera lygus.');
+}
+
 // d) ar jie nelygūs
+if (vnt[0].length != vnt[1].length) {
+    console.log('Zodziu "Mylia" ir "Kilometras" ilgiai yra nelygus.');
+}
+
 // e) kuris didesnis arba lygus
-// f) kuris mažesnis arba lygus
+if (vnt[0].length >= vnt[1].length) {
+    console.log('Zodis "Mylia" yra ilgesnis arba lygus zodzio "Kilometras"" ilgiui.');
+} else {
+    console.log('Zodis "Kilometras" yra ilgesnis arba lygus zodzio "Mylia" ilgiui.');
+}
 
-
-
-// išvesti sąrašo tipo kintamųjų ilgius
-
-
-// tarpusavyje palyginti sąrašo tipo kintamųjų ilgius:
-
-// a) kuris didesnis
-// b) kuris mažesnis
-// c) ar jie lygūs
-// d) ar jie nelygūs
-// e) kuris didesnis arba lygus
-// f) kuris mažesnis arba lygus
-
-
-
-
-
-
-
-
+// f) kuris mažesnis arba lygūs
+if (vnt[0].length <= vnt[1].length) {
+    console.log('Zodis "Mylia" yra trumpesnis arba lygus zodzio "Kilometras" ilgiui.');
+}
+console.log(' IV. Ciklo "for" panaudojimas')
 /*
-Suskaičiuoti ką gausime susumavus skaičius 
+1.Suskaičiuoti ką gausime susumavus skaičius 
 intervale parp (imtinai)
 */
 // a. 0...0
@@ -266,26 +337,24 @@ intervale parp (imtinai)
 
 
 /*
-Panaudojant ciklą perrašyti tekstinio tipo kintamųjų
+2.Panaudojant ciklą perrašyti tekstinio tipo kintamųjų
 reikšmes iš kito galo:
 pvz.: "abcdef" -> "fedcba"
 */
 
 
 
-/*Suskaičiuoti kiek nurodytame internavale yra skaičių,
+/*
+3.Suskaičiuoti kiek nurodytame internavale yra skaičių,
 kurie dalijasi be liekanos iš 3, 5 ir 7 atskirai:
 */
 // a. 0 - 11
 // b. 8 - 31
 // c. -18 - 18
 // d. rezultatą pateikti tokiu formatu:
-//     i. Skaičių intervale tarp 0 ir 11, besidalijančių
-//        be liekanos iš 3 yra  4 vienetai.
-//    ii. Skaičių intervale tarp 0 ir 11, besidalijančių 
-//        be liekanos iš 5 yra 3 vienetai
-//   iii. Skaičių intervale tarp 0 ir 11, besidalijančių
-//        be liakanos iš 7 yra 2 vienetai.
+//   i.Skaičių intervale tarp 0 ir 11, besidalijančiųbe liekanos iš 3 yra  4 vienetai.
+//  ii.Skaičių intervale tarp 0 ir 11, besidalijančių be liekanos iš 5 yra 3 vienetai
+// iii. Skaičių intervale tarp 0 ir 11, besidalijančių be liakanos iš 7 yra 2 vienetai.
 
 
 

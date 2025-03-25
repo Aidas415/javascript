@@ -18,7 +18,10 @@ Aritmetiniai operatoriai:
 Aritmetiniai priskyrimo operatoriai:
 +=, -=, *=, /=, **= (kelimas laipsniu),
 %= (dalybos liekana)
-
+!= nelygu
+= priskyras
+== naudojami "if"e tikrinti ar lygu
+=== visiskai tikrai lygu
 */
 
 const a = 1;

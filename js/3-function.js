@@ -39,7 +39,7 @@ console.log(hiPerson('Petras'));
 console.log(hiPerson('Ona'));
 console.log(hiPerson());
 
-console.clear();
+
 
 // 2+2 = 4
 // 7+5 = 12
@@ -57,7 +57,7 @@ console.log(f);
 const g = sum(-7, 15);
 console.log(g);
 
-console.clear();
+
 
 // 100 -> 121 Eur
 // 200 -> 242 Eur
@@ -78,7 +78,7 @@ console.log(p2);
 const p3 = priceWithVAT(73);
 console.log(p3);
 
-console.clear();
+
 
 // Jonas -> Zodzis "Jonas" yra sudarytas is 5 raidziu.
 // Maryte -> Zodzis "Maryte" yra sudarytas is 6 raidziu.
@@ -118,7 +118,7 @@ console.log(gn1);
 console.log(gn2);
 console.log(gn3);
 
-console.clear();
+
 
 // 2, 2     ->  2 + 2 = 4
 // 7, 5     ->  7 + 5 = 12
