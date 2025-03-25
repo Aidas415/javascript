@@ -1,0 +1,25 @@
+{
+  "name": "javascript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "typeof":"node --watch ./js/typeof.js",
+    "multiplay":"node --watch ./js/multiplay.js",
+    "text":"node --watch ./js/text-size.js",
+    "adult":"node --watch ./js/adult.js",
+    "array":"node --watch ./js/6-array.js",
+    "if":"node --watch ./js/5-if.js",
+    "boolean":"node --watch ./js/4-boolean.js",
+    "function":"node --watch ./js/3-function.js",
+    "fantasy":"node --watch ./js/fantasy.js",
+    "string": "node --watch ./js/2-string.js",
+    "number": "node --watch ./js/1-number.js",
+    "js":"node --watch ./index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+    
+  },
+  "keywords": [],
+  "author": "Aidas415(https://github.com/Aidas415)",
+  "license": "MIT",
+  "description": ""
+}
