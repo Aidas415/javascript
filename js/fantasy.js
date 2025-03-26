@@ -325,6 +325,8 @@ console.log(' IV. Ciklo "for" panaudojimas')
 intervale parp (imtinai)
 */
 // a. 0...0
+
+
 // b. 0...4
 // c. 0...100
 // d. 574...815

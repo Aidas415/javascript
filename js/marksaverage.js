@@ -12,14 +12,18 @@ function marksAverage(list)
     return sum/count;
 }
 
+console.log(marksAverage([]));
+console.log(marksAverage([10]));
+console.log(marksAverage([2]));
+console.log(marksAverage([10, 2, 8, 4, 6]));
+console.log(marksAverage([8, 4, 7]));
+console.log(marksAverage([2, 'n']));
+console.log(marksAverage(['n']));
+console.log(marksAverage([8, 'n', 4, 7]));
+console.log(marksAverage(['n', 0, 2, 8, 4, 6]));
 
-
-
-
-
-
-
-
+console.log(marksAverage('Labas'));
+console.log(marksAverage(true));
 
 
 

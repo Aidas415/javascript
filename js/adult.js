@@ -6,11 +6,16 @@ grazina zodi:
 Amziaus ribos kriterijus: >=18 metu.
 */
 
-function isAdult() {
+function isAdult(age) {
     if (age >= 18) {
-        return
+        return 'suauges';
+    } else {
+        return 'vaikas';
     }
 
 }
 
+console.log(isAdult(99), '-->', 'suauges');
 console.log(isAdult(18), '-->', 'suauges');
+console.log(isAdult(17), '-->', 'vaikas');
+console.log(isAdult(1), '-->', 'vaikas');

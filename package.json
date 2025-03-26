@@ -2,7 +2,10 @@
   "name": "javascript",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {
+  "scripts":{
+    "multitable":"node --watch ./js/multi-table.js",
+    "task":"node --watch ./js/task.js",
+    "for":"node --watch ./js/for.js",
     "marksaverage":"node --watch ./js/marksaverage.js",
     "typeof":"node --watch ./js/typeof.js",
     "multiplay":"node --watch ./js/multiplay.js",
