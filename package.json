@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts":{
+    "interval":"node --watch ./js/interval-sum.js",
     "multitable":"node --watch ./js/multi-table.js",
     "task":"node --watch ./js/task.js",
     "for":"node --watch ./js/for.js",
