@@ -140,6 +140,10 @@ aritmetika1 += zaislai1[3];
 aritmetika1 -= zaislai1[4];
 aritmetika1 += zaislai1[5];
 console.log(aritmetika1);
+// kitas budas
+sum1 = zaislai1[1] - zaislai1[2] + zaislai1[3] - zaislai1[4] + zaislai1[5];
+console.log(sum1); 
+
 let aritmetika2 = 0;
 aritmetika2 += zaislai2[1];
 aritmetika2 -= zaislai2[2];
@@ -147,6 +151,10 @@ aritmetika2 += zaislai2[3];
 aritmetika2 -= zaislai2[4];
 aritmetika2 += zaislai2[5];
 console.log(aritmetika2);
+// kitas budas
+sum2 = zaislai2[1] - zaislai2[2] + zaislai2[3] - zaislai2[4] + zaislai2[5];
+console.log(sum2);
+
 let aritmetika3 = 0;
 aritmetika3 += zaislai3[1];
 aritmetika3 -= zaislai3[2];
@@ -154,6 +162,9 @@ aritmetika3 += zaislai3[3];
 aritmetika3 -= zaislai3[4];
 aritmetika3 += zaislai3[5];
 console.log(aritmetika3)
+// kitas budas
+sum3 = zaislai3[1] - zaislai3[2] + zaislai3[3] - zaislai3[4] + zaislai3[5];
+console.log(sum3);
 
 console.log('  (4)');
 
@@ -169,6 +180,7 @@ darzoves1 += darzas[2] + ', ';
 darzoves1 += darzas[1] + ', ';
 darzoves1 += darzas[0] + '.'
 console.log(darzoves1);
+
 
 let i = 4;
 let darzoves = darzas[i] +', ';
@@ -194,8 +206,6 @@ j -= 1;
 darzoves2 += darzas[j] + '.'
 console.log(darzoves2);
 
-console.clear();
-
 console.log(' III. Kintamuju palyginimas');
 /*
 Priklausomai nuo sąlygos sukurkite 2 skirtingų reiksmių
@@ -213,29 +223,33 @@ išvesti sakinį "Bandykite kitą kartą".
 //  f) kuris mažesnis arba lygus
 const kint1 = 7;
 const kint2 = 8;
+//'a' priskirti kaip tenkinancia salyga,
+//'b' priskirti kaip netenkinancia salygos,
+a = 'Pomidoras';
+b = 'Bandykite kita karta';
 if (kint1 > kint2) {
-    console.log('Pomidoras');
+    console.log('a)', a);
 } else {
-    console.log('Bandykite kita karta');
+    console.log('a)', b);
 }
 if (kint1 < kint2) {
-    console.log('Pomidoras');
+    console.log('b)', a);
 }
 if (kint1 == kint2) {
-    console.log('Pomidoras');
+    console.log('c)', b);
 } else {
-    console.log('Bandykite kita karta');
+    console.log('c)', b);
 }
 if (kint1 != kint2) {
-    console.log('Pomidoras');
+    console.log('d)', a);
 }
 if (kint1 >= kint2) {
-    console.log('Pomidoras');
+    console.log('e)', a);
 } else {
-    console.log('Bandykite kita karta');
+    console.log('e)', b);
 }
 if (kint1 <= kint2) {
-    console.log('Pomidoras');
+    console.log('f)', a);
 } 
 
 // 2. išvesti teksto tipo kintamųjų ilgius
@@ -325,21 +339,25 @@ console.log(' IV. Ciklo "for" panaudojimas')
 intervale tarp (imtinai)
 */
 // a. 0...0
-console.log('a)'), intervalSum(0, 0);
+console.log('a)', intervalSum(0, 0));
 // b. 0...4
-console.log('b)'), intervalSum(0, 4);
+console.log('b)', intervalSum(0, 4));
 // c. 0...100
-console.log('c)'), intervalSum(0, 100);
+console.log('c)', intervalSum(0, 100));
 // d. 574...815
-console.log('d)'), intervalSum(574, 815);
+console.log('d)', intervalSum(574, 815));
 // e. -50...50
-console.log('e)'), intervalSum(-50, 50),
+console.log('e)', intervalSum(-50, 50)),
 // f. -70...30
-console.log('f)'), intervalSum(-70, 30);
+console.log('f)', intervalSum(-70, 30));
 function intervalSum(start, end) {
     let sum = 0;
-    for (let i = start; i <= end; i++) {
-        sum += 1;
+    if (start === 0) {
+        sum = (end*(end + 1)) / 2;
+    } else {
+        for (let i = start; i <= end; i++) {
+            sum += i;
+        }
     }
     return sum;
 }
@@ -352,14 +370,20 @@ function intervalSum(start, end) {
 reikšmes iš kito galo:
 pvz.: "abcdef" -> "fedcba"
 */
-
-
+const iskaba = ['a','b','c','d','e','f'];
+let zodis = '';
+for (let i = iskaba.length - 1; i >= 0; i--) {
+    zodis+= iskaba[i];
+    
+} 
+console.log(zodis);
 
 /*
 3.Suskaičiuoti kiek nurodytame internavale yra skaičių,
 kurie dalijasi be liekanos iš 3, 5 ir 7 atskirai:
 */
 // a. 0 - 11
+
 // b. 8 - 31
 // c. -18 - 18
 // d. rezultatą pateikti tokiu formatu:

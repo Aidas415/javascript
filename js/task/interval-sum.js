@@ -1,7 +1,7 @@
 function intervalSum(start, end) {
     let sum = 0;
     for (let i = start; i <= end; i++) {
-        sum += 1
+        sum += 1;
     }
     return sum;
 }
