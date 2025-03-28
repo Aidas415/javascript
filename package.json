@@ -2,32 +2,40 @@
   "name": "javascript",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts":{
-    "digit":"node --watch ./js/task/digit-count.js",
-    "count":"node --watch ./js/task/interval-count.js",
-    "revers":"node --watch ./js/task/string-revers.js",
-    "interval":"node --watch ./js/task/interval-sum.js",
-    "multitable":"node --watch ./js/task/multi-table.js",
-    "task":"node --watch ./js/task.js",
-    "for":"node --watch ./js/task/for.js",
-    "marksaverage":"node --watch ./js/task/marksaverage.js",
-    "typeof":"node --watch ./js/task/typeof.js",
-    "multiply":"node --watch ./js/task/multiply.js",
-    "text":"node --watch ./js/task/text-size.js",
-    "adult":"node --watch ./js/task/adult.js",
-    "array":"node --watch ./js/6-array.js",
-    "if":"node --watch ./js/5-if.js",
-    "boolean":"node --watch ./js/4-boolean.js",
-    "function":"node --watch ./js/3-function.js",
-    "fantasy":"node --watch ./js/fantasy.js",
+  "scripts": {
+    "homework": "node --watch ./js/homework/homework.js",
+    "digit": "node --watch ./js/task/digit-count.js",
+    "count": "node --watch ./js/task/interval-count.js",
+    "revers": "node --watch ./js/task/string-revers.js",
+    "interval": "node --watch ./js/task/interval-sum.js",
+    "multitable": "node --watch ./js/task/multi-table.js",
+    "task": "node --watch ./js/task.js",
+    "for": "node --watch ./js/task/for.js",
+    "marksaverage": "node --watch ./js/task/marksaverage.js",
+    "typeof": "node --watch ./js/task/typeof.js",
+    "multiply": "node --watch ./js/task/multiply.js",
+    "text": "node --watch ./js/task/text-size.js",
+    "adult": "node --watch ./js/task/adult.js",
+    "array": "node --watch ./js/6-array.js",
+    "if": "node --watch ./js/5-if.js",
+    "boolean": "node --watch ./js/4-boolean.js",
+    "function": "node --watch ./js/3-function.js",
+    "fantasy": "node --watch ./js/fantasy.js",
     "string": "node --watch ./js/2-string.js",
     "number": "node --watch ./js/1-number.js",
-    "js":"node --watch ./index.js",
+    "js": "node --watch ./index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
-    
   },
   "keywords": [],
-  "author": "Aidas415(https://github.com/Aidas415)",
+  "author": "Aidas415 (https://github.com/Aidas415)",
   "license": "MIT",
-  "description": ""
+  "description": "Markdown",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aidas415/javascript.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Aidas415/javascript/issues"
+  },
+  "homepage": "https://github.com/Aidas415/javascript#readme"
 }

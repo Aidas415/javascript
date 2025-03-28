@@ -333,37 +333,56 @@ if (vnt[0].length >= vnt[1].length) {
 if (vnt[0].length <= vnt[1].length) {
     console.log('Zodis "Mylia" yra trumpesnis arba lygus zodzio "Kilometras" ilgiui.');
 }
+
+console.clear();
+
 console.log(' IV. Ciklo "for" panaudojimas')
 /*
 1.Suskaičiuoti ką gausime susumavus skaičius 
 intervale tarp (imtinai)
 */
-// a. 0...0
-console.log('a)', intervalSum(0, 0));
-// b. 0...4
-console.log('b)', intervalSum(0, 4));
-// c. 0...100
-console.log('c)', intervalSum(0, 100));
-// d. 574...815
-console.log('d)', intervalSum(574, 815));
-// e. -50...50
-console.log('e)', intervalSum(-50, 50)),
-// f. -70...30
-console.log('f)', intervalSum(-70, 30));
-function intervalSum(start, end) {
-    let sum = 0;
-    if (start === 0) {
-        sum = (end*(end + 1)) / 2;
-    } else {
-        for (let i = start; i <= end; i++) {
-            sum += i;
-        }
-    }
-    return sum;
+//
+// a) (0....0),
+let sum3a = 0;
+for(let i = 0; i <= 0; i++) {
+   sum3a += i;
 }
+console.log('1a) ' + sum3a);
 
+// b. 0...4
+let sum3b = 0;
+for(let i = 0; i <= 4; i++) {
+    sum3b += i;  
+}
+console.log('1b) ' + sum3b);
 
+// c. 0...100
+let sum3c = 0;
+for(let i = 0; i <= 100; i++) {
+    sum3c += i;
+}
+console.log('1c) ' + sum3c);
 
+// d. 574...815
+let sum3d = 0;
+for(let i = 574; i <= 815; i++) {
+    sum3d += i;
+}
+console.log('1d) ' + sum3d);
+
+// e. -50...50
+let sum3e = 0;
+for(let i = -50; i <= 50; i++) {
+    sum3e += i;
+}
+console.log('1e) ' + sum3e);
+
+// f. -70...30
+let sum3f = 0;
+for(let i = -70; i <= 30; i++) {
+    sum3f += i;
+}
+console.log('1f) ' + sum3f);
 
 /*
 2.Panaudojant ciklą perrašyti tekstinio tipo kintamųjų
@@ -373,19 +392,60 @@ pvz.: "abcdef" -> "fedcba"
 const iskaba = ['a','b','c','d','e','f'];
 let zodis = '';
 for (let i = iskaba.length - 1; i >= 0; i--) {
-    zodis+= iskaba[i];
-    
+    zodis+= iskaba[i];    
 } 
-console.log(zodis);
+console.log('2) ' + zodis);
 
 /*
 3.Suskaičiuoti kiek nurodytame internavale yra skaičių,
 kurie dalijasi be liekanos iš 3, 5 ir 7 atskirai:
 */
-// a. 0 - 11
+// a) 0 - 11
+function intervalCount(start, end, divider)
+{
+    let count = 0;
+    for (let i = start; i <= end; i++)
+    {
+        if (i % divider === 0) 
+            count++;        
+    }
+    
+    return `Skaiciu intervale tarp ${start} ir ${end} besidalijanciu be liekanos is "${divider}" yra ${count} vienetai.`
+}
+console.log('a)   i. ', intervalCount(0, 11, 3));
+console.log('a)  ii.', intervalCount(0, 11, 5));
+console.log('a) iii.', intervalCount(0, 11, 7));
 
 // b. 8 - 31
+function intervalCount(start, end, divider)
+{
+    let count = 0;
+    for (let i = start; i <= end; i++)
+    {
+        if (i % divider === 0)
+            count++;
+    }
+    return `Skaiciu intervale tarp ${start} ir ${end} besidalijanciu be liekanos is "${divider}" yra ${count} vienetai.`
+}
+console.log('b)   i. ', intervalCount(8, 31, 3));
+console.log('b)  ii. ', intervalCount(8, 31, 5));
+console.log('b) iii. ', intervalCount(8, 31, 7));
+
 // c. -18 - 18
+function intervalCount(start, end, divider)
+{
+    let count = 0;
+    for (let i = start; i <= end; i++)
+    {
+        if (i % divider === 0)
+            count++;
+    }
+    return `Skaiciu intervale tarp ${start} ir ${end} besidalijanciu be liekanos is "${divider}" yra ${count} vienetai.`
+}
+console.log('c)   i. ', intervalCount(-18, 18, 3));
+console.log('c)  ii. ', intervalCount(-18, 18, 5));
+console.log('c) iii. ', intervalCount(-18, 18, 7));
+
 // d. rezultatą pateikti tokiu formatu:
 //   i.Skaičių intervale tarp 0 ir 11, besidalijančiųbe liekanos iš 3 yra  4 vienetai.
 //  ii.Skaičių intervale tarp 0 ir 11, besidalijančių be liekanos iš 5 yra 3 vienetai
