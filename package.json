@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "homework": "node --watch ./js/homework/homework.js",
+    "object": "node --watch ./js/9-object.js",
+ 
+    "biggest": "node --watch ./js/task/biggest-number.js",
+    "homework": "node --watch ./js/homework.js/homework.js",
     "digit": "node --watch ./js/task/digit-count.js",
     "count": "node --watch ./js/task/interval-count.js",
     "revers": "node --watch ./js/task/string-revers.js",

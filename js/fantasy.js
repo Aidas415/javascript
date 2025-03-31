@@ -1,20 +1,21 @@
 //Atvirksciai uzrasytas vardas "AIDAS"
-const text = "AIDAS";
-const FirstSymbol = text[0];
-console.log(text[0]);
-console.log(text[1]);
-console.log(text[2]);
-console.log(text[3]);
-console.log(text[4]);
+const text0 = "AIDAS";
+const FirstSymbol = text0[0];
+console.log(text0[0]);
+console.log(text0[1]);
+console.log(text0[2]);
+console.log(text0[3]);
+console.log(text0[4]);
 
-console.log(text[4] + text[3] + text[2] 
-    + text[1] + text[0]);
+console.log(text0[4] + text0[3] + text0[2] 
+    + text0[1] + text0[0]);
 
 
-    console.log('-----NAMU DARBAI-----');
+console.log('-----NAMU DARBAI-----');
 
-    console.log(' I. Kintamuju inicijavimas');
-
+console.log('-------------');
+console.log('       I. Kintamuju inicijavimas');
+console.log('-------------');
 /*
 1. Sukurti 3 kintamuosius su skaičiaus tipo reikšmėmis.
 Po kiekvieno jų inicijavimo išvesti i console
@@ -103,8 +104,9 @@ valiuta[1] + ', ir ' + valiuta[4] + ', ir ' + valiuta[2] + ', ir ' +
 valiuta[3] + '. Tai skirtingo laikotarpio Lietuvos ' + valiuta[0] + '.'  
 console.log(valiuta1);
 
+console.log('------------');
 console.log(' II. Veiksmai su kintamaisiais');
-
+console.log('------------');
 console.log('  (1)');
 /*
 1. susumuoti visus skaičiaus tipo kintamuosius
@@ -206,7 +208,9 @@ j -= 1;
 darzoves2 += darzas[j] + '.'
 console.log(darzoves2);
 
-console.log(' III. Kintamuju palyginimas');
+console.log('--------------');
+console.log('       III. Kintamuju palyginimas');
+console.log('---------------');
 /*
 Priklausomai nuo sąlygos sukurkite 2 skirtingų reiksmių
 nurodyto tipo kintamuosius. Lygininat, jei rezulltatas
@@ -334,9 +338,9 @@ if (vnt[0].length <= vnt[1].length) {
     console.log('Zodis "Mylia" yra trumpesnis arba lygus zodzio "Kilometras" ilgiui.');
 }
 
-console.clear();
-
-console.log(' IV. Ciklo "for" panaudojimas')
+console.log('----------------');
+console.log('       IV. Ciklo "for" panaudojimas');
+console.log('----------------');
 /*
 1.Suskaičiuoti ką gausime susumavus skaičius 
 intervale tarp (imtinai)
@@ -384,18 +388,26 @@ for(let i = -70; i <= 30; i++) {
 }
 console.log('1f) ' + sum3f);
 
+console.log('--------------');
 /*
 2.Panaudojant ciklą perrašyti tekstinio tipo kintamųjų
 reikšmes iš kito galo:
 pvz.: "abcdef" -> "fedcba"
 */
-const iskaba = ['a','b','c','d','e','f'];
-let zodis = '';
-for (let i = iskaba.length - 1; i >= 0; i--) {
-    zodis+= iskaba[i];    
-} 
-console.log('2) ' + zodis);
+// iskaba = "abcdef"
+function stringReverse(text)
+{   
+        let result = '';
+    for (let i = text.length - 1; i >= 0; i--)
+    {
+        result += text[i];
+    }
+    return result;
+}
 
+console.log('"abcdef" = "' + stringReverse('abcdef') + '"');
+
+console.log('------------')
 /*
 3.Suskaičiuoti kiek nurodytame internavale yra skaičių,
 kurie dalijasi be liekanos iš 3, 5 ir 7 atskirai:
@@ -411,10 +423,10 @@ function intervalCount(start, end, divider)
     }
     
     return `Skaiciu intervale tarp ${start} ir ${end} besidalijanciu be liekanos is "${divider}" yra ${count} vienetai.`
-}
-console.log('a)   i. ', intervalCount(0, 11, 3));
-console.log('a)  ii.', intervalCount(0, 11, 5));
-console.log('a) iii.', intervalCount(0, 11, 7));
+} 
+console.log('a)   I. ', intervalCount(0, 11, 3));
+console.log('a)  II.', intervalCount(0, 11, 5));
+console.log('a) III.', intervalCount(0, 11, 7));
 
 // b. 8 - 31
 function intervalCount(start, end, divider)
@@ -427,9 +439,9 @@ function intervalCount(start, end, divider)
     }
     return `Skaiciu intervale tarp ${start} ir ${end} besidalijanciu be liekanos is "${divider}" yra ${count} vienetai.`
 }
-console.log('b)   i. ', intervalCount(8, 31, 3));
-console.log('b)  ii. ', intervalCount(8, 31, 5));
-console.log('b) iii. ', intervalCount(8, 31, 7));
+console.log('b)   I. ', intervalCount(8, 31, 3));
+console.log('b)  II. ', intervalCount(8, 31, 5));
+console.log('b) III. ', intervalCount(8, 31, 7));
 
 // c. -18 - 18
 function intervalCount(start, end, divider)
@@ -442,14 +454,141 @@ function intervalCount(start, end, divider)
     }
     return `Skaiciu intervale tarp ${start} ir ${end} besidalijanciu be liekanos is "${divider}" yra ${count} vienetai.`
 }
-console.log('c)   i. ', intervalCount(-18, 18, 3));
-console.log('c)  ii. ', intervalCount(-18, 18, 5));
-console.log('c) iii. ', intervalCount(-18, 18, 7));
+console.log('c)   I. ', intervalCount(-18, 18, 3));
+console.log('c)  II. ', intervalCount(-18, 18, 5));
+console.log('c) III. ', intervalCount(-18, 18, 7));
 
 // d. rezultatą pateikti tokiu formatu:
-//   i.Skaičių intervale tarp 0 ir 11, besidalijančiųbe liekanos iš 3 yra  4 vienetai.
-//  ii.Skaičių intervale tarp 0 ir 11, besidalijančių be liekanos iš 5 yra 3 vienetai
-// iii. Skaičių intervale tarp 0 ir 11, besidalijančių be liakanos iš 7 yra 2 vienetai.
+//   I.Skaičių intervale tarp 0 ir 11, besidalijančiųbe liekanos iš 3 yra  4 vienetai.
+//  II.Skaičių intervale tarp 0 ir 11, besidalijančių be liekanos iš 5 yra 3 vienetai
+// III. Skaičių intervale tarp 0 ir 11, besidalijančių be liakanos iš 7 yra 2 vienetai.
+
+console.log('-------------');
+console.log('       V. Funkcijos');
+console.log('-------------');
+/*
+1.Funkcija pavadinimu "tusciaFunkcija":
+  a) nepriima jokių kintamųjų
+  b) netlieka jokios vidinės logikos
+  c) gražina Boolean tipo reikšmę "false"
+  d) TESTAS:
+    i. consoe.log(tuscuaFunkcija());
+   ii. rezultatas: false
+*/
+const w1 = 6;
+const q1 = 9;
+const x1 = 2;
+
+function tuscia (){
+    return false
+}
+
+console.log(tuscia(w1, x1));
+console.log(tuscia(x1, q1));
+console.log(tuscia(x1, w1));
+
+console.log('--------------');
+/*
+ 2.Funkcija pavadinimu "Daugyba":
+   a) priima du skaičiaus tipo kintamuosius 
+   b) atskirame kintamajame įsimena sandaugos reikšmę
+   c) gražina sandaugos rezultatą
+   d) TESTAI:
+        I. console.log(daugyba(skaicius1, skaicius2));
+       II. console.log(daugyba(skaicius3, skaicius2)); 
+      III. console.log(daugyba(skaicius1,skaicius3));  
+       IV. rezultatas: teisingos reikšmės;   
+*/
+// a)
+const skaicius1 = 8;  
+const skaicius2 = 40;
+const skaicius3 = 7;
+function daugyba (kint1, kint2)
+{
+    let result = 0;
+    result = kint1 * kint2;
+    return result; 
+}
+console.log(daugyba(skaicius1, skaicius2));
+console.log(daugyba(skaicius3, skaicius2));
+console.log(daugyba(skaicius1, skaicius3));
+/*
+ 3.Funkcija pavadinimu "skaitmenuKiekisSkaiciuje":
+   a) priima vieną kintamąjį 
+   b) jei perduotas kintamasis nėra skaičiaus tipo, tai išveda pranešimą "Pateikta netinkamo tipo reikšmė."
+   c) priešingu atveju funkcija tęsia darbą 
+   d) į atskirą kintamąjį įsimena skaičių sudarančių skaitmenų kiekį 
+   f) TESTAI: 
+        I. console.log(skaitmenuKiekisSkaiciuje(5)); 
+            1. rezultatas: 1
+       II. console.log(skaitmenuKiekisSkaiciuje(781)); 
+            1. rezultatas: 3
+      III. console.log(skaitmenuKiekisSkaiciuje(37060123456));  
+            1. rezultatas: 11
+       IV. console.log(skaitmenuKiekisSkaiciuje(true));  
+            1. rezultatas:"Pateikta netinkamo tipo reikšmė."
+        V. console.log(skaitmenuKiekisSkaiciuje(asd));
+            1. rezultatas:"Pateikta netinkamo tipo reikšmė."
+       VI. console.log(skaitmenuKiekisSkaiciuje(NaN));  
+            1. rezultatas:"Pateikta netinkamo tipo reikšmė."
+*/
+
+function skaitmenuKiekisSkaiciuje (n)
+{
+    if (typeof n !== 'number')
+    {
+        return `Pateikta netinkamo tipo reikšmė.`
+    }
+    if (!isFinite(n))
+    {
+        return `pateikta netinkamo tipo reikšmė.`
+    }
+    const numberAsString = '' + n;
+    let count = numberAsString.length;
+    if  (n % 1 != 0) 
+    {
+        count--;
+    }
+    if (n < 0) {
+        count--;
+    }
+    return count;
+}
+
+console.log(skaitmenuKiekisSkaiciuje(5));
+console.log(skaitmenuKiekisSkaiciuje(781));
+console.log(skaitmenuKiekisSkaiciuje(37060123456));
+console.log(skaitmenuKiekisSkaiciuje(true));
+console.log(skaitmenuKiekisSkaiciuje("asd"));
+console.log(skaitmenuKiekisSkaiciuje(NaN));
 
 
 
+
+
+
+
+/*
+  4.Funkcija pavadinimu "didziausiasSkaiciusSarase":  
+    a) priima vieną kintamąjį
+    b) jei perduotas kintamasis nėra sąrašo tipo, tai išveda pranešimą "Pateikta netinkamo tipo reikšmė."
+    c) jei sąrašas yra tuščias, tai išveda pranešimą "Pateiktas sąrašas negali būti tuščias."
+    d)priešingu atveju funkcija tęsia darbą
+    e) pereina per visą pateiktą sąrašą ir į atskirą kintamąjį įsimena skaičių, kuris tuo metu yra didžiausias
+    f) gražina didžiausią surastą skaičių
+    g) TESTAI:
+        I. console.log(didziausiasSkaiciusSarase([1]));
+            1. rezultatas: 1
+       II. console.log(didziausiasSkaiciusSarase([1, 2, 3]));
+            1. rezultatas: 3
+      III. console.log(didziausiasSkaiciusSarase([-5, 78, 14, 0, 18]));  
+            1. rezultatas: 78
+       IV. console.log(didziausiasSkaiciusSarase([69, 69, 69, 69, 66])); 
+            1. rezultatas: 69
+        V. console.log(didziausiasSkaiciusSarase([-1, -2, -3, -4, -5, -6, -7, -8]));
+            1. rezultatas: -1
+       VI. console.log(didziausiasSkaiciusSarase("pomidoras")); 
+            1. rezultatas: "Patekta netinamo tipo reikšmė."
+      VII. console.log(didziausiasSkaiciusSarase([]));  
+            1. rezultatas: "Pateiktas sąrašas negali būti tuščias."
+*/            

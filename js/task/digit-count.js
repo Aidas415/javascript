@@ -1,4 +1,5 @@
-function digitCount(n) {
+function digitCount(n) 
+{
     if (typeof n !== 'number') {
         return 'Reikalingas skaicius.';
     }
@@ -8,17 +9,17 @@ function digitCount(n) {
     
     if (!isFinite(n)) {
         return 'Reikalingas normalus skaicius.';
-        }
+    }
    
     const numberAsString = '' + n;
     let count = numberAsString.length;
 
-if (n % 1 !== 0) {
-    count--;
-}
-if (n < 0) {
-    count--;
-}
+    if (n % 1 !== 0) {
+        count--;
+    }
+    if (n < 0) {
+        count--;
+    }
 
     return count;
 } 
@@ -40,11 +41,13 @@ console.log(digitCount(NaN));
 console.log(digitCount(4), '--> 5');
 console.log(digitCount(736), '--> 3');
 console.log(digitCount(3450224), '--> 7');
+
 console.log(digitCount(5.5), '--> 2');
 console.log(digitCount(6272.89367), '--> 9');
-console.log(digitCount(-4), '--> 5');
-console.log(digitCount(-736), '--> 3');
-console.log(digitCount(-3450224), '--> 7');
+
+console.log(digitCount(-4295554412545544), '--> 16');
+console.log(digitCount(10000000000000000000), '--> 20');
+console.log(digitCount(-34502245142862), '--> 14');
 console.log(digitCount(-5.5), '--> 2');
 console.log(digitCount(-6272.89367), '--> 9');
 

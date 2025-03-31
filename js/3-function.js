@@ -99,7 +99,7 @@ console.log(nl2);
 console.log(nl3);
 console.log(nl4);
 
-console.clear();
+
 
 // 5   -> Gautas skaicius: 5.
 // -13 -> Gautas skaicius: -13.
