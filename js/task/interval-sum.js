@@ -1,6 +1,8 @@
-function intervalSum(start, end) {
+function intervalSum(start, end) 
+{
     let sum = 0;
-    for (let i = start; i <= end; i++) {
+    for (let i = start; i <= end; i++) 
+    {
         sum += i;
     }
     return sum;
@@ -55,12 +57,16 @@ console.log('16)', intervalSum1(0, 1_000_000));
 console.log('14)', intervalSum1(0, 10_000_000));
 console.log('15)', intervalSum1(0, 100_000_000));
 
-function intervalSum1(start, end) {
+function intervalSum1(start, end) 
+{
     let sum = 0;
-    if (start === 0) {
+    if (start === 0) 
+    {
         sum = (end * (end + 1)) / 2;
-    } else {
-        for (let i = start; i <= end; i++) {
+    } else 
+    {
+        for (let i = start; i <= end; i++) 
+        {
             sum += 1;
         }
     }
