@@ -533,18 +533,21 @@ console.log(daugyba(skaicius1, skaicius3));
             1. rezultatas:"Pateikta netinkamo tipo reikšmė."
 */
 
-function skaitmenuKiekisSkaiciuje (n)
+console.log('--------------')
+
+function skaitmenuKiekisSkaiciuje(n)
 {
     if (typeof n !== 'number')
     {
-        return `Pateikta netinkamo tipo reikšmė.`
+        return `Pateikta netinkamo tipo reikšmė.`;
     }
     if (!isFinite(n))
     {
-        return `pateikta netinkamo tipo reikšmė.`
+        return `pateikta netinkamo tipo reikšmė.`;
     }
-    const numberAsString = '' + n;
+    const numberAsString = '' + n; 
     let count = numberAsString.length;
+    
     if  (n % 1 != 0) 
     {
         count--;
@@ -553,7 +556,7 @@ function skaitmenuKiekisSkaiciuje (n)
         count--;
     }
     return count;
-}
+}   
 
 console.log(skaitmenuKiekisSkaiciuje(5));
 console.log(skaitmenuKiekisSkaiciuje(781));
@@ -591,4 +594,52 @@ console.log(skaitmenuKiekisSkaiciuje(NaN));
             1. rezultatas: "Patekta netinamo tipo reikšmė."
       VII. console.log(didziausiasSkaiciusSarase([]));  
             1. rezultatas: "Pateiktas sąrašas negali būti tuščias."
-*/            
+*/   
+
+console.log('--------------')
+/*
+function didziausiasSkaiciusSarase(row) 
+{
+    if (typeof row != Array)
+    {
+        return '"Pateikta netinkamo tipo reikšmė."';
+    }
+    if (row == empty)
+    {
+        return '"Pateiktas sąrašas negali būti tuščias."';
+    }
+    let biggest = -Infinity;
+    for (i = 0; i < row.length; i++)
+    {
+        if (typeof row[i] == 'number' && isFinite(row[i]))
+        {
+            continue;
+        }
+        if (row[i] > biggest)
+        {
+            biggest = row[i];
+        }        
+    }
+    return biggest;
+}   
+
+console.log(didziausiasSkaiciusSarase([1]));
+console.log(didziausiasSkaiciusSarase([1, 2, 3]));
+console.log(didziausiasSkaiciusSarase([-5, 78, 14, 0, 18])); 
+console.log(didziausiasSkaiciusSarase([69, 69, 69, 69, 66]));
+console.log(didziausiasSkaiciusSarase([-1, -2, -3, -4, -5, -6, -7, -8]));
+console.log(didziausiasSkaiciusSarase("pomidoras"));
+console.log(didziausiasSkaiciusSarase([]));
+*/
+
+
+
+
+
+
+
+
+
+
+
+

@@ -16,8 +16,105 @@ function mokinioVidurkis (mokinys)
 const filmas1 = ['Kalėjimo bėgliai', 'trileris', 9];
 const filmas2 = ['9 jardai', 'komedija', 7]
 const filmas3 = ['9-asis rajonas', 'fantastika', 8]
+function atranka (Filmas)
+    {
+        if (Filmas[1] === 'fantastika')
+        {
+            return 'netinkamas';
+        }
+        else if (Filmas[2] >= 8)
+        {
+            return 'patiktu';
+        }
+        else 
+        {
+            return 'netinkamas'
+        }
+        
+    }
+  
+console.log(atranka(filmas3));
 
-const manoBalas = 8; 
-const manoZanras = 'ne fantastinis';
 
-function manoFilmas ()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//function manoFilmas ()
+/*
+let atvirukoTekstas = 'labai geras daiktas yra televizorius aš su juo galiu matyti jus';
+let atvirukoraide = 'a';
+let atvirukoSuma = 0;
+for (let i = 0; i < atvirukoTekstas.length; i++) 
+{
+    if (atvirukoTekstas[i] === atvirukoraide) 
+    {
+        atvirukoSuma += 1;
+    }
+}
+
+
+function AtvirukoLipdukai(Raide)
+{
+    for (let i = 0; i < atvirukoTekstas.length; i++)
+    {
+        if (atvirukoTekstas[i] === Raide)
+        {
+            atvirukoSuma += 1;
+        }
+    }
+    return atvirukoSuma;
+}
+
+console.log(AtvirukoLipdukai('a'));
+console.log(AtvirukoLipdukai('b'));
+
+
+
+const AtvirukoBalses = ['a', 'e', 'o', 'u', 'i'];
+
+for (let i = 0; i < AtvirukoBalses.length; i++)
+{
+    console.log("raidė " + AtvirukoBalses.length + "pasikartoja " + AtvirukoLipdukai(AtvirukoBalses[i]));
+}
+
+
+console.log(atvirukoSuma);
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -88,20 +88,40 @@ const student = {
     ],
 };
 console.log(student.name);
-//console.log(student.phoneNumbers.length);
 console.log(student.parients.length);
 console.log(student.parients[0].name);
 console.log(student.parients[1].name);
 console.log(student.parients[0].phoneNumbers.length);
 console.log(student.parients[1].phoneNumbers[1]);
 
+const studentName1 = 'Jonas';
+const studentAge1 = 99;
+const studentIsMarried1 = true;
+const studentName2 = 'Maryte';
+const studentAge2 = 88; 
+const studentIsMarried2 = false;
 
+//                name, age, isMarried
 
+const student1 = ['Jonas', 99, true];
+const student2 = ['Maryte', 88, false];
+const student3 = ['Petras', false, 77,];
+const student4 = [true, 66, 'Ona'];
 
-
-
-
-
+const stud1 = 
+{
+    name: 'Jonas',
+    age: 99,
+    isMarried: true,
+};
+const stud2 = 
+{
+    name: 'Maryte', 
+    age: 88,
+    isMarried: false,
+};
+console.log(stud1.name);
+console.log(stud2.name);
 
 
 
