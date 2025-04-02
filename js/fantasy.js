@@ -597,24 +597,29 @@ console.log(skaitmenuKiekisSkaiciuje(NaN));
 */   
 
 console.log('--------------')
-/*
+
 function didziausiasSkaiciusSarase(row) 
 {
-    if (typeof row != Array)
+//    if (typeof row !== Array)
+//    {
+//        return '"Pateikta netinkamo tipo reikšmė."';
+//    }
+    if (Array.isArray(row) == false)
     {
         return '"Pateikta netinkamo tipo reikšmė."';
     }
-    if (row == empty)
+    if (row.length == 0)
     {
         return '"Pateiktas sąrašas negali būti tuščias."';
     }
     let biggest = -Infinity;
     for (i = 0; i < row.length; i++)
     {
-        if (typeof row[i] == 'number' && isFinite(row[i]))
+        if (typeof row[i] !== 'number' || !isFinite(row[i]))
         {
             continue;
         }
+        
         if (row[i] > biggest)
         {
             biggest = row[i];
@@ -630,10 +635,13 @@ console.log(didziausiasSkaiciusSarase([69, 69, 69, 69, 66]));
 console.log(didziausiasSkaiciusSarase([-1, -2, -3, -4, -5, -6, -7, -8]));
 console.log(didziausiasSkaiciusSarase("pomidoras"));
 console.log(didziausiasSkaiciusSarase([]));
-*/
 
 
 
+//if (typeof row[i] !== 'number' || !isFinite(row[i]))
+//    {
+//        continue;
+//    }
 
 
 
