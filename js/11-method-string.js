@@ -1,54 +1,115 @@
+/*
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
+*/
 
+console.log('Labas');
+console.log('Labas'[0]);
+console.log('Labas'[1]);
+console.log('Labas'[2]);
+console.log('Labas'[3]);
+console.log('Labas'[4]);
 
+const text = 'Pomidoras';
+console.log(text[0]);
+console.log(text[text.length -1]);
 
 // at
+console.log('\nat "nurodo teksto simbolio vietą');
 
-console.log('\nat');
-console.log('Labas');
-console.log('at');
-console.log('Labas');
-console.log('at');
-console.log('Labas');
-console.log('at');
-console.log('Labas');
+console.log('--', text.at(0));
+console.log('--', text.at(1));
+console.log('--', text.at(2));
+console.log('--', text.at(20));
+console.log('--', text.at(-1));
+console.log('--', text.at(-2));
+console.log('--', text.at(-3));
+console.log('--', text.at(-20));
 
-
-
+console.log('--------------');
 
 // includes
-console.log('\nincludes')
+console.log('\nincludes "pasako ar ieškomas simbolis tekste yra"');
 console.log('Vasara'.includes('V'));
 console.log('Vasara'.includes('v'));
 console.log('Vasara'.includes('A'));
 console.log('Vasara'.includes('a'));
+console.log('Vasara'.includes('x'));
 
+console.log('----');
 
+console.log('Bepasikulversciaudamas'.includes('a'));
+console.log('Bepasikulversciaudamas'.includes('aaa'));
+console.log('Bepasikulversciaudamas'.includes('kul'));
+console.log('Bepasikulversciaudamas'.includes('ciauda'));
+console.log('Bepasikulversciaudamas'.includes('cauda'));
+console.log('Bepasikulversciaudamas'.includes('Bepa'));
 
+console.log('--------------');
 
 // startsWith
 
-console.log('\nstartsWith')
+console.log('\nstartsWith "Pasako ar tekstas prasideda tuo ar tais simbolias"');
 console.log('Pomidoras'.startsWith('a'));
 console.log('Pomidoras'.startsWith('p'));
-console.log('pomidoras'.startsWith('P'));
-console.log('Pomidoras'.startsWith('a'));
+console.log('Pomidoras'.startsWith('P'));
+console.log('Pomidoras'.startsWith('Po'));
+console.log('Pomidoras'.startsWith('PO'));
+console.log('Pomidoras'.startsWith('Pomid'));
+console.log('Pomidoras'.startsWith('Pomidoras'));
+console.log('Pomidoras'.startsWith('doras'));
+console.log(' Pomidoras'.startsWith('Pom'));
+console.log(' Pomidoras'.startsWith(' Pom'));
+
+console.log('--------------');
 
 // endsWith
 
-console.log('\nendsWith')
+console.log('\nendsWith "Pasako ar tekstas baigiasi tuo ar tais simboliais"');
 console.log('Pomidoras'.endsWith('a'));
-console.log('Pomidoras'.endsWith('p'));
-console.log('pomidoras'.endsWith('P'));
-console.log('Pomidoras'.endsWith('a'));
+console.log('Pomidoras'.endsWith('Pom'));
+console.log('pomidoras'.endsWith('s'));
+console.log('Pomidoras'.endsWith('as'));
+console.log('Pomidoras'.endsWith('ras'));
+console.log('Pomidoras'.endsWith('oras'));
+console.log('pomidoras'.endsWith('doras'));
+console.log('Pomidoras'.endsWith('Pomidoras'));
+
+console.log('--------------');
 
 // indexOf
 // 012345678
 
-console.log('\nindexOf');
+console.log('\nindexOf "ieškomo simbolio indeksas (-1 = nerasta)"');
 console.log('Pomidoras'.indexOf('a'));
+console.log('Pomidoras'.indexOf('o'));
+console.log('pomidoras'.indexOf('om'));
 console.log('Pomidoras'.indexOf('p'));
+console.log('Pomidoras'.indexOf('x'));
 console.log('pomidoras'.indexOf('P'));
 console.log('Pomidoras'.indexOf('a'));
+console.log('Pomidoras'.indexOf('mido'));
+console.log('Pomidoras'.indexOf('o'));
+console.log('pomidoras'.indexOf('o', 0));
+console.log('Pomidoras'.indexOf('o', 1));
+console.log('Pomidoras'.indexOf('o', 2));
+
+console.log('------');
+
+console.log('Kulverstukas'.indexOf('u'));
+console.log('Kulverstukas'.indexOf('u', 2));
+
+console.log('------');
+
+const k = 'kulverstukas';
+console.log(k.indexOf('u'));
+console.log(k.indexOf('u', 2));
+console.log(k.indexOf('u', k.indexOf('u') + 1));
+
+
+console.log('--------------');
+
+
+
 
 console.log('\nrepeat');
 
