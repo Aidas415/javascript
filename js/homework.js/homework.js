@@ -35,69 +35,132 @@ function atranka (Filmas)
   
 console.log(atranka(filmas3));
 
+console.log('------------------');
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//function manoFilmas ()
-/*
-let atvirukoTekstas = 'labai geras daiktas yra televizorius aš su juo galiu matyti jus';
-let atvirukoraide = 'a';
-let atvirukoSuma = 0;
-for (let i = 0; i < atvirukoTekstas.length; i++) 
+function check(a, x) 
 {
-    if (atvirukoTekstas[i] === atvirukoraide) 
+  for (i = 0; i < a.length; i++)
+  {
+    if (a[i] == x) 
     {
-        atvirukoSuma += 1;
-    }
+      return true;
+    } 
+  }
+  return false;
 }
 
+let a = [12, 45, 23, 8];
+x = 45;
+console.log(check(a, x));
 
-function AtvirukoLipdukai(Raide)
+
+function check1(a, x) 
 {
-    for (let i = 0; i < atvirukoTekstas.length; i++)
+  for (i = 0; i < a.length; i++)
+  {
+    if (a[i] === x) 
     {
-        if (atvirukoTekstas[i] === Raide)
+      return true;
+    } 
+  }
+  return false;
+
+}
+
+let a2 = [12, 45, 23, 8];
+x = 45;
+console.log(check1(a2, x));
+
+function positiveSum(arr) {
+    let sum = 0;
+    for (i = 0; i < arr.length; i++)
+      if (arr[i] > 0)
+      {
+        sum = sum + arr[i];
+      }
+    return sum;
+  }
+ 
+  console.log(positiveSum([1, -4, 7, 12]));
+
+  console.log('--------------------');
+
+function arrayMadness(a,b)
+{   
+    let sum1 = 0;
+    for (i = 0; i < b.length; i++) 
+    {
+        sum1 = sum1 + a[i]**2;
+    }
+    let sum2 = 0;
+    for (i = 0; i < b.length; i++) 
+    {
+        sum2 = sum2 + b[i]**3;
+    }
+    if (sum1 > sum2)
         {
-            atvirukoSuma += 1;
+            return true;
         }
-    }
-    return atvirukoSuma;
+       
+    return false;
 }
 
-console.log(AtvirukoLipdukai('a'));
-console.log(AtvirukoLipdukai('b'));
+console.log(arrayMadness([4, 5, 6],[1, 2, 3]));
+
+console.log('--------------------');
 
 
+/*
 
-const AtvirukoBalses = ['a', 'e', 'o', 'u', 'i'];
-
-for (let i = 0; i < AtvirukoBalses.length; i++)
+function junginys(a1, s1, o1)
 {
-    console.log("raidė " + AtvirukoBalses.length + "pasikartoja " + AtvirukoLipdukai(AtvirukoBalses[i]));
+    a1 = a1 + '';
+    let naujas = '';
+    for (i = 0; i < a1.length; i++)
+    {
+        naujas[0] = a1[0];
+        naujas[i] += 2;
+    }
+    s1 = s1 + '';
+    for (i = 0; i < s1.length; i++)
+    {
+        naujas[1] = s1[0];
+        naujas[i] += 2;
+    }
+    o1 = o1 + '';
+    for (i = 0; i < o1.length; i++)
+    {
+        naujas[2] = o1[0];
+        naujas[i] += 2;
+    }
+    return naujas
 }
 
-
-console.log(atvirukoSuma);
 */
+/*
+// ???????
+function past(h, m, s)
+{
+    for (i = 0; i <= h; i++)
+        {
+            for (i = 0; i <= m; i++)
+                {
+                    for (i = 0; i <= s; i++)
+                        console.log((h * 3600 + m * 60 + s) * 1000);                        
+                }
+        } 
+}
+
+///console.log(past(0, 51, 23))
+*/
+
+function past(h, m, s)
+{
+    result = ((h * 3600 + m * 60) + s) * 1000;
+    return result
+}
+console.log(past(2, 47, 23))
+
 
 
 
