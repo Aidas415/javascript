@@ -107,45 +107,17 @@ function arrayMadness(a,b)
 
 console.log(arrayMadness([4, 5, 6],[1, 2, 3]));
 
-console.log('--------------------');
+console.log('--------------------')
 
-
-/*
-
-function junginys(a1, s1, o1)
-{
-    a1 = a1 + '';
-    let naujas = '';
-    for (i = 0; i < a1.length; i++)
-    {
-        naujas[0] = a1[0];
-        naujas[i] += 2;
-    }
-    s1 = s1 + '';
-    for (i = 0; i < s1.length; i++)
-    {
-        naujas[1] = s1[0];
-        naujas[i] += 2;
-    }
-    o1 = o1 + '';
-    for (i = 0; i < o1.length; i++)
-    {
-        naujas[2] = o1[0];
-        naujas[i] += 2;
-    }
-    return naujas
-}
-
-*/
 /*
 // ???????
 function past(h, m, s)
 {
-    for (i = 0; i <= h; i++)
+    for (i = 0; i <= h.length; i++)
         {
-            for (i = 0; i <= m; i++)
+            for (i = 0; i <= m.length; i++)
                 {
-                    for (i = 0; i <= s; i++)
+                    for (i = 0; i <= s.length; i++)
                         console.log((h * 3600 + m * 60 + s) * 1000);                        
                 }
         } 
@@ -162,21 +134,59 @@ function past(h, m, s)
 console.log(past(2, 47, 23))
 
 
+function hero(bullets, dragons)
+{
+    if(bullets >= dragons * 2)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+console.log(hero(5, 2));
+    
 
 
 
+function strCount(str, letter)
+{     
+  let result = 0;
+  for ( let i = 0; i < str.length; i++)
+  {
+    if (str[i] == letter)
+    {
+      result = result + 1;
+    }
+  }
+  return result;
+} 
+
+console.log(strCount('Hello', 'l'));
+
+var summation = function (num) 
+{
+  let result = 0;
+  for ( let i = 1; i <= num; i++)
+  {
+    result = result + i;
+  }
+  return result;
+}
 
 
+function century(year) 
+{
+    let result = 0;
+  for (let i = 0; i <= year; i += 100)
+    {
+        result = result + 1;
+    }
+  return result;
+}
 
-
-
-
-
-
-
-
-
-
+console.log(century(2099));
 
 
 

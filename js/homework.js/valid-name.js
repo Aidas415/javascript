@@ -9,22 +9,10 @@ function validName(name)
     return firstLetter + restLetter;
 }
 
-console.log(validName('jonas'));
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+console.log(validName('jonas'), '-->','Jonas' );
+console.log(validName('maRYTE'), '-->', 'Maryte');
+console.log(validName('PeTrAS'), '-->', "Petras");
+console.log(validName('oNa'), '-->', 'Ona');

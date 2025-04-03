@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "methodarray": "node --watch ./js/13-method-array.js",
+    "money": "node --watch ./js/homework.js/money-format.js",
+    "methodnumber": "node --watch ./js/12-method-number.js",
     "validname": "node --watch ./js/homework.js/valid-name.js",
     "methodstring": "node --watch ./js/11-method-string.js",
     "object": "node --watch ./js/9-object.js",
