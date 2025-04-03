@@ -1,6 +1,7 @@
 /*
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
 */
+//'asdf.
 
 console.log('Labas');
 console.log('Labas'[0]);
@@ -14,7 +15,7 @@ console.log(text[0]);
 console.log(text[text.length -1]);
 
 // at
-console.log('\nat "nurodo teksto simbolio vietą');
+console.log('\nat "nurodo teksto simbolio vietą"');
 
 console.log('--', text.at(0));
 console.log('--', text.at(1));
@@ -77,7 +78,6 @@ console.log('Pomidoras'.endsWith('Pomidoras'));
 console.log('--------------');
 
 // indexOf
-// 012345678
 
 console.log('\nindexOf "ieškomo simbolio indeksas (-1 = nerasta)"');
 console.log('Pomidoras'.indexOf('a'));
@@ -108,18 +108,35 @@ console.log(k.indexOf('u', k.indexOf('u') + 1));
 
 console.log('--------------');
 
+// repeat
 
-
-
-console.log('\nrepeat');
-
+console.log('\nrepeat "simbolio ar jų kiekio pakartojimas"');
 console.log('a');
-const symbol = 'Labas';
+const symbol = 'm';
 const megaSymbol = symbol.repeat(5);
 console.log(symbol);
 console.log(megaSymbol);
 
+const symbol1 = 'Labas';
+const megaSymbol1 = symbol1.repeat(5);
+console.log(symbol1);
+console.log(megaSymbol1);
+
+// for būdas
+
+function stringRepeat(text, count)
+{
+    let result = '';
+    for (let i = 0; i < Math.floor(count); i++)
+        {
+            result += text;
+        }
+    return result;
+}
+console.log(stringRepeat('riki-', 3));
+
 // replace
+
 console.log('\nreplace');
 
 console.log('vasara'. replace('a', 'A'));
