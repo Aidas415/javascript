@@ -32,7 +32,6 @@ function atranka (Filmas)
         }
         
     }
-  
 console.log(atranka(filmas3));
 
 console.log('------------------');
@@ -48,7 +47,6 @@ function check(a, x)
   }
   return false;
 }
-
 let a = [12, 45, 23, 8];
 x = 45;
 console.log(check(a, x));
@@ -64,9 +62,7 @@ function check1(a, x)
     } 
   }
   return false;
-
 }
-
 let a2 = [12, 45, 23, 8];
 x = 45;
 console.log(check1(a2, x));
@@ -80,10 +76,9 @@ function positiveSum(arr) {
       }
     return sum;
   }
- 
-  console.log(positiveSum([1, -4, 7, 12]));
+console.log(positiveSum([1, -4, 7, 12]));
 
-  console.log('--------------------');
+console.log('--------------------');
 
 function arrayMadness(a,b)
 {   
@@ -104,12 +99,11 @@ function arrayMadness(a,b)
        
     return false;
 }
-
 console.log(arrayMadness([4, 5, 6],[1, 2, 3]));
 
 console.log('--------------------')
 
-/*
+
 // ???????
 function past(h, m, s)
 {
@@ -123,16 +117,18 @@ function past(h, m, s)
         } 
 }
 
-///console.log(past(0, 51, 23))
-*/
+console.log(past(0, 51, 23))
 
-function past(h, m, s)
+// paprasciau
+
+function past1(h, m, s)
 {
     result = ((h * 3600 + m * 60) + s) * 1000;
     return result
 }
-console.log(past(2, 47, 23))
+console.log(past1(2, 47, 23))
 
+console.log('-----------');
 
 function hero(bullets, dragons)
 {
@@ -147,8 +143,7 @@ function hero(bullets, dragons)
 }
 console.log(hero(5, 2));
     
-
-
+console.log('-------------');
 
 function strCount(str, letter)
 {     
@@ -162,8 +157,9 @@ function strCount(str, letter)
   }
   return result;
 } 
-
 console.log(strCount('Hello', 'l'));
+
+console.log('------------');
 
 var summation = function (num) 
 {
@@ -174,7 +170,11 @@ var summation = function (num)
   }
   return result;
 }
+console.log(summation(8));
+console.log(summation(5));
+console.log(summation(11));
 
+console.log('-------------');
 
 function century(year) 
 {
@@ -184,10 +184,8 @@ function century(year)
         result = result + 1;
     }
   return result;
-}
+}console.log(century(2099));
 
-console.log(century(2099));
-
-
+console.log('---------------');
 
 

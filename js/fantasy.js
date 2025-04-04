@@ -564,8 +564,8 @@ console.log(skaitmenuKiekisSkaiciuje(37060123456));
 console.log(skaitmenuKiekisSkaiciuje(true));
 console.log(skaitmenuKiekisSkaiciuje("asd"));
 console.log(skaitmenuKiekisSkaiciuje(NaN));
-
-
+console.log(skaitmenuKiekisSkaiciuje(3.14));
+console.log(skaitmenuKiekisSkaiciuje(-245.21));
 
 
 

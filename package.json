@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "mentore": "node --watch ./js/homework.js/mentore.js",
     "methodarray": "node --watch ./js/13-method-array.js",
     "money": "node --watch ./js/homework.js/money-format.js",
     "methodnumber": "node --watch ./js/12-method-number.js",
