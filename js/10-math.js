@@ -8,7 +8,7 @@ console.log(Math.SQRT2);
 
 // abs (absioliutinė vertė)
 
-console.log('\nabs (absoliutinė vertė');
+console.log('\nabs (absoliutinė skaičiaus vertė (be "-"))');
 console.log(Math.abs(5));
 console.log(Math.abs(-5));
 
@@ -52,7 +52,7 @@ console.log(Math.round(8.9999999999));
 
 // trunc (apvalina į nulį)
 
-console.log('\ntrunc (apvalina į nulį)');;
+console.log('\ntrunc (apvalina link "0")');;
 console.log(Math.trunc(8));
 console.log(Math.trunc(9));
 console.log(Math.trunc(4.5));
