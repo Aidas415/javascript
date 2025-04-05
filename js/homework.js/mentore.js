@@ -105,7 +105,47 @@ function differenceInAges (ages) {
 }
 console.log(differenceInAges([62, 25, 30, 64, 29]));
 
+// Avių sąrašas ?????????????????????
 
+function countSheeps(sheep) 
+{
+  let result = 0;
+  sheep = [];
+  for(let i = 0; i < sheep.length; i++);
+  if (sheep[i] === true) 
+  {
+    result = result + 1;
+  }
+  if (sheep[i] === false) 
+  {
+    result = result + 0;
+  }
+  if (sheep[i] === null) 
+  {
+    result = result + 0;
+  }
+  if (sheep[i] === undefined) 
+  {
+    result = result + 0;
+  }
+  return result;
+}
+console.log(countSheeps[true, false, null, true, undefined]);
 
+// Autobuso keleiviai
 
-
+function enough(cap, on, wait) 
+{
+  if (cap - on - wait >=0)
+  { 
+    return 0;
+  }
+  else (cap - on - wait < 0)
+  {
+    let result = 0;
+    result = (cap - on - wait) * (-1);
+    return result;
+  }
+}
+console.log(enough(45, 28, 21));
+console.log(enough(45, 26, 16));
