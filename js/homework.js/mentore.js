@@ -95,42 +95,47 @@ console.log(visuAmzius([13, 15, 6, 39, 51]));
 
 // Greitesnis būdas
 
-function differenceInAges (ages) {
-
+function differenceInAges (ages) 
+{
     let max = Math.max(...ages),
-        min = Math.min(...ages)
-        diff = max - min
+    min = Math.min(...ages)
+    diff = max - min
         
     return [min, max, diff]
 }
 console.log(differenceInAges([62, 25, 30, 64, 29]));
+
+console.log('----------');
 
 // Avių sąrašas ?????????????????????
 
 function countSheeps(sheep) 
 {
   let result = 0;
-  sheep = [];
-  for(let i = 0; i < sheep.length; i++);
-  if (sheep[i] === true) 
+  for(let i = 0; i < sheep.length; i++)
   {
-    result = result + 1;
+    if (sheep[i] === false) 
+      {
+        result = result + 0;
+      }
+    if (sheep[i] === null) 
+      {
+        result = result + 0;
+      }
+    if (sheep[i] === undefined) 
+      {
+        result = result + 0;
+      }
+    if (sheep[i] === true) 
+      {
+        result = result + 1;
+      }
+    return result;
   }
-  if (sheep[i] === false) 
-  {
-    result = result + 0;
-  }
-  if (sheep[i] === null) 
-  {
-    result = result + 0;
-  }
-  if (sheep[i] === undefined) 
-  {
-    result = result + 0;
-  }
-  return result;
 }
-console.log(countSheeps[true, false, null, true, undefined]);
+console.log(countSheeps([true, false, true, null, true, undefined]));
+
+console.log('----------');
 
 // Autobuso keleiviai
 
