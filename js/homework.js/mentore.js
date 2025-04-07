@@ -130,10 +130,10 @@ function countSheeps(sheep)
       {
         result = result + 1;
       }
-    return result;
   }
+  return result;
 }
-console.log(countSheeps([true, false, true, null, true, undefined]));
+console.log(countSheeps([false, null, true,  undefined]));
 
 console.log('----------');
 
@@ -154,3 +154,75 @@ function enough(cap, on, wait)
 }
 console.log(enough(45, 28, 21));
 console.log(enough(45, 26, 16));
+
+// Tekstas iš kito galo
+
+function reverseWords(str)
+{ 
+
+
+
+  return str; // reverse those words
+}
+
+console.log('------')
+
+// Teksto žodžiai nuo galo
+
+function isGalo(SAK) 
+{
+  let N = '';
+  SAK = SAK.replaceAll('"', '');
+  let KITSAK = SAK.split(' ');
+  for (let i = KITSAK.length - 1; i >= 0; i--)
+    {
+      N += KITSAK[i] + ' ';
+    }
+  N = '"' + N.trimEnd() + '"';  
+  return N
+}
+let SAK = '"Hello Wordl!"'
+console.log(isGalo(SAK));
+
+//let SAK = 'niekaip nerandu klaidu'
+//console.log(SAK.split(' '));
+//console.log(SAK.split(' ').length)
+//console.log(isGalo(niekaip nerandu klaidu));
+
+// Blokų tūriai
+/*
+function turiuSkirtumas(a, b)
+{
+  let T1 = [A1, A2, A3]; 
+  let T2 = [B1, B2, B3];
+  result = a - b;
+  if (result < 0)
+    {
+      result = -1 * result;
+    }
+  return result;
+}
+  */
+const A1 = 2;
+const A2 = 4;
+const A3 = 3.5;
+const B1 = 3;
+const B2 = 4;
+const B3 = 4.5;
+//console.log(turiuSkirtumas(2*4*3.5, 3*4*4.5));
+
+a = A1 * A2 * A3;
+b = B1 * B2 * B3;
+
+function findDifference(a, b) 
+{
+  result = Math.abs (a - b);
+  return result;
+}
+console.log(findDifference(a, b));
+
+
+
+
+
+

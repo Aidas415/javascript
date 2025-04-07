@@ -2,7 +2,7 @@
 ARRAY - sąrašas, Arėjus, matrica, masyvas, list'as, rinkinys
 */
 
-const empty = 1;
+const empty = [];
 console.log(empty);
 
 const luckyNumbers = [7, 777, 13, 666, 8, 2];
@@ -78,7 +78,7 @@ sentence2 += dictionary[5] + ', ';
 sentence2 += dictionary[6] + '.';
 console.log(sentence2); 
 
-console.clear();
+//console.clear();
 
 let index = 0
 let sentence3 = 'Patiekalui reikes: ';
@@ -131,4 +131,4 @@ sentence5 += dictionary[++j] + ', ';
 sentence5 += dictionary[++j] + '.';
 console.log(sentence5);
 
-console.clear();
+//console.clear();

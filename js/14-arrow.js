@@ -1,0 +1,14 @@
+// Rodyklinė funkcija
+
+
+
+
+
+
+
+
+
+
+
+
+

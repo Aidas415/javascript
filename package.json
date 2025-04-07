@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "fancy": "node --watch ./js/homework.js/fancy-math.js",
     "mentore": "node --watch ./js/homework.js/mentore.js",
     "methodarray": "node --watch ./js/13-method-array.js",
     "money": "node --watch ./js/homework.js/money-format.js",
@@ -11,6 +12,7 @@
     "methodstring": "node --watch ./js/11-method-string.js",
     "object": "node --watch ./js/9-object.js",
     "math": "node --watch ./js/10-math.js",
+    "arrow": "node --watch ./js/14-arrow.js",
     "biggest": "node --watch ./js/task/biggest-number.js",
     "homework": "node --watch ./js/homework.js/homework.js",
     "digit": "node --watch ./js/task/digit-count.js",
@@ -20,6 +22,7 @@
     "multitable": "node --watch ./js/task/multi-table.js",
     "task": "node --watch ./js/task.js",
     "for": "node --watch ./js/task/for.js",
+    "namessplit": "node --watch ./js/task/names-split-join.js",
     "marksaverage": "node --watch ./js/task/marksaverage.js",
     "typeof": "node --watch ./js/task/typeof.js",
     "multiply": "node --watch ./js/task/multiply.js",

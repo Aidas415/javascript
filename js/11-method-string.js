@@ -233,7 +233,7 @@ console.log('LABAS'.toLowerCase());             // labas
 console.log('LaBAs'.toLowerCase());             // labas
 console.log('KNBS 65DFS; 585F'.toLowerCase());  // knbs 65dfs 585f
 
-console.clear();
+//console.clear();
 
 console.log('------');
 
@@ -338,4 +338,16 @@ console.log(s3);                    //
 const s4 = String.fromCharCode(26000);
 console.log(s4);                    //
 const s5 = String.fromCharCode(9845);
-console.log(s5);                    //
+console.log(s5);     
+
+
+//const word
+//toUpperCase()
+
+function capitalizeWord(word) {
+  
+    word[0].toUpperCase();
+    return word;
+  }
+console.log(capitalizeWord(labas));
+//

@@ -188,4 +188,63 @@ function century(year)
 
 console.log('---------------');
 
+// Šalia teksto žodžių prideda jo raidžių kiekį ir visą tekstą grąžina kaip masyvą. 
+
+/*
+function zodziuIlgis(eilute)
+{
+  let naujaEilute = eilute.split(' ');
+  for (let i = 0; i < naujaEilute.length; i++)
+    {
+      naujaEilute[i] = naujaEilute[i] + ' ' + naujaEilute[i].length;
+    }
+  return naujaEilute;
+}
+let eilute = 'turetu buti gerai'
+console.log(zodziuIlgis(eilute));
+*/
+/* Nesigauna
+function magNumber(info)
+{
+  const PT92 = 17;
+  const M4A1 = 30;
+  const M16A2 = 30;
+  const PSG1 = 5;
+  //let result = 0;
+  if (PT92,info)
+    {
+      //result = (info * 3) / 17;
+      console.log (Math.ceil(info * 3 / 17));
+    }
+  if (M4A1, info)
+    {
+      //result = info * 3 / 30;
+      console.log(Math.ceil(info * 3 / 30));
+    }
+  if (M16A2, info)
+    {
+      //result = info * 3 / 30;
+      console.log(Math.ceil(info * 3 / 30));
+    }  
+  if (PSG1, info)
+    {
+      //result = info * 3 / 5;
+      result >= Math.ceil(info * 3 / 5);
+    }
+} 
+console.log(magNumber(28))
+
+//console.log(Math.ceil(28.9))
+*/
+
+function pozicija(raide)
+{
+  const alph = [a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z];
+  let result = 0;
+  result = alph.indexOf(raide) + 1;
+  return result;
+}
+
+console.log(pozicija(b));
+
 
