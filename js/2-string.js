@@ -66,7 +66,7 @@ const backSlash2 = "\\\\";
 console.log(backSlash1);
 console.log(backSlash2);
 
-console.clear();
+//console.clear();
 
 /*
 <header>
@@ -111,7 +111,7 @@ const html3 = '\
 console.log('-------------------');
 console.log(html3);
 
-console.clear();
+//console.clear();
 
 // Vienguba (') kabute.
 const b1 = `Vienguba (') kabute.`;

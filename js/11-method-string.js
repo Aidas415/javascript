@@ -343,11 +343,39 @@ console.log(s5);
 
 //const word
 //toUpperCase()
-
+/*
 function capitalizeWord(word) {
   
     word[0].toUpperCase();
     return word;
   }
-console.log(capitalizeWord(labas));
-//
+console.log(capitalizeWord(word));
+*/
+
+console.log('labas'.toUpperCase())
+
+
+
+function capitalizeWord(word) 
+{
+    let ward = ''
+    'word'.trim();
+    'word[0]'.toUpperCase();
+    return word;
+}
+
+console.log(capitalizeWord('labas'));
+
+
+
+
+
+
+
+
+
+
+
+
+
+

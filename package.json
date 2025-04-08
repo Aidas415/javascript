@@ -26,7 +26,7 @@
     "multitable": "node --watch ./js/task/multi-table.js",
     "task": "node --watch ./js/task.js",
     "for": "node --watch ./js/task/for.js",
-    "namessplit": "node --watch ./js/task/names-split-join.js",
+    "names": "node --watch ./js/task/names-split-join.js",
     "marksaverage": "node --watch ./js/task/marksaverage.js",
     "typeof": "node --watch ./js/task/typeof.js",
     "multiply": "node --watch ./js/task/multiply.js",

@@ -36,11 +36,11 @@ console.log(atranka(filmas3));
 
 console.log('------------------');
 
-function check(a, x) 
+function check(a, x1) 
 {
   for (i = 0; i < a.length; i++)
   {
-    if (a[i] == x) 
+    if (a[i] == x1) 
     {
       return true;
     } 
@@ -48,8 +48,8 @@ function check(a, x)
   return false;
 }
 let a = [12, 45, 23, 8];
-x = 45;
-console.log(check(a, x));
+x1 = 45;
+console.log(check(a, x1));
 
 
 function check1(a, x) 
@@ -64,8 +64,8 @@ function check1(a, x)
   return false;
 }
 let a2 = [12, 45, 23, 8];
-x = 45;
-console.log(check1(a2, x));
+x1 = 45;
+console.log(check1(a2, x1));
 
 function positiveSum(arr) {
     let sum = 0;
@@ -237,16 +237,123 @@ console.log(magNumber(28))
 //console.log(Math.ceil(28.9))
 */
 // raidės vieta abėcėlėje
+
 /*
-let b = '';
 function pozicija(raide)
 {
-  const alph = [a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z];
+  const alph = 'a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z';
   let result = 0;
   result = alph.indexOf(raide) + 1;
   return result;
 }
 
-console.log(pozicija(b));
+console.log(pozicija(z));
 */
+
+
+function litres(time)
+{
+  return (Math.floor(time * 0.5));
+}
+console.log(litres(11.8))
+
+// kitas
+
+function problem(x)
+{
+  let result = 0;
+  result = (50 * x + 6);
+  if (result % 1 === 0)
+  {
+    return result;
+  }
+  if (result % 1 !== 0)
+  {
+    return "Error";
+  }
+}
+console.log(problem(0))
+
+// kitas
+
+function checkAlive (health)
+{
+  if(health > 0 && health <= 10)
+    {
+      return true
+    }
+  else(health <= 0 && health >= -10)
+    {
+      return false
+    }
+  
+}
+console.log(checkAlive(0));
+
+// kitas
+/*
+function capitalizeWord(word) {
+  'word'.trim();
+  'word[0]'.toUpperCase();
+  return word;
+}
+*/
+/*
+let current = '';
+function updateLight(current) {
+
+  if ('green')
+    {
+      return 'yellow';
+    }
+   
+  if ('yellow')
+    {
+      return "red";
+    }
+
+  ('red')
+    {
+      return 'green';
+    }
+}
+
+
+console.log(updateLight('yellow'));
+*/
+
+
+
+//let x = 0;
+//let y = 0;
+function quadrant(x, y) 
+{
+  if (x > 0 && y > 0)
+  {
+    return `${x}`, `${y}`, 1;
+  }
+  if (x < 0 && y > 0)
+  {
+    return `${x}`, `${y}`, 2;
+  }
+  if (x < 0 && y < 0)
+  {
+    return `${x}`, `${y}`, 3;
+  }
+  if (x > 0 && y < 0)
+  {
+    return `${x}`, `${y}`, 4;
+  }
+}
+
+console.log(quadrant(-2, 6));
+
+
+
+
+
+
+
+
+
 
