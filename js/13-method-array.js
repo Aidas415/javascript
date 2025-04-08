@@ -2,6 +2,7 @@
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
 */
 
+// push Į sąrašą prideda po naują narį iš galo
 const list = [];
 console.log(list);
 
@@ -90,10 +91,31 @@ console.log(numbers2, g1, g2);
 
 console.log('------------');
 
-numbers2.unshift(1);
-numbers2.unshift(2);
-numbers2.unshift(3);
+// unshift Į sąrašą prideda po naują narį iš priekio
+numbers2.unshift(11);
+numbers2.unshift(22);
+numbers2.unshift(33);
 console.log(numbers2);
+
+// shif Pašalina pirmąjį narį iš sąrašo
+const g3 = numbers2.shift();
+const g4 = numbers2.shift();
+
+console.log(numbers2, g3, g4);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

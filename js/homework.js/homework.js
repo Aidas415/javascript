@@ -236,7 +236,9 @@ console.log(magNumber(28))
 
 //console.log(Math.ceil(28.9))
 */
-
+// raidės vieta abėcėlėje
+/*
+let b = '';
 function pozicija(raide)
 {
   const alph = [a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z];
@@ -246,5 +248,5 @@ function pozicija(raide)
 }
 
 console.log(pozicija(b));
-
+*/
 
