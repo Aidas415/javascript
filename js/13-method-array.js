@@ -20,6 +20,8 @@ console.log(list);
 list.push(1, 2, 3, 4, 5);
 console.log(list);
 
+console.clear();
+
 console.log('----------')
 
 // Padvigubinti skačius masyve
@@ -67,4 +69,32 @@ for (let i = 0; i < n2.length; i++)
         n12.push(n2[i]);
     }
 console.log(n12);
+
+console.clear();
+
+console.log('------------');
+
+const numbers2 = [10, 2,  8, 4, 6]; 
+console.log(numbers2);
+
+numbers2.push(9);
+console.log(numbers2);
+
+// pop() Pašalina sąrašo narį. Po vieną nuo galo.
+// Bei gr1žina tai, ką pašalino
+const g1 = numbers2.pop();
+const g2 = numbers2.pop();
+console.log(numbers2, g1, g2);
+
+
+
+console.log('------------');
+
+numbers2.unshift(1);
+numbers2.unshift(2);
+numbers2.unshift(3);
+console.log(numbers2);
+
+
+
 
