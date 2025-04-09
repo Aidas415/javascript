@@ -340,19 +340,20 @@ console.log(s4);                    //
 const s5 = String.fromCharCode(9845);
 console.log(s5);     
 
+console.clear();
 
-//const word
+//const word = 'tostas'
 //toUpperCase()
 /*
 function capitalizeWord(word) {
-  
+    const word = 'tostas'
     word[0].toUpperCase();
     return word;
   }
 console.log(capitalizeWord(word));
 */
 
-console.log('labas'.toUpperCase())
+//console.log('labas'.toUpperCase())
 
 
 
@@ -366,14 +367,28 @@ function capitalizeWord(word)
 
 console.log(capitalizeWord('labas'));
 
+const diktant = 'sjSjjAndxa'.replace('s', 'o').replace('S', 'O')
+
+
+
+console.log(diktant)
 
 
 
 
+console.log('\nreplace (Pakeičia parinką raidę/junginį/žodį į pateiktą.)');
+console.log('vasara'. replace('a', '-'));   // v-sara
+console.log('vasara'. replace('a', 'A'));   // vAsara
+const summer4 = 'vasara'.replace('s', 'k');  
+console.log(summer4);
+// chain (grandinė)
+const summer5 = 'vasara'.replace('a', '-').replace('a', '-');
+console.log(summer5);                       // v-s-ra
 
+const summer6 = 'vasara'.replace('a', '-').replace('a', '-').replace('a', '-');
+console.log(summer6)                        // v-s-r-
 
-
-
+//console.clear();
 
 
 
