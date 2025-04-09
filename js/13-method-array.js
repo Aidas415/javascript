@@ -53,7 +53,9 @@ for (let i = 0; i < names.length; i++)
     }
 console.log(nameSize);                 // [5, 6, 6, 3]
 console.log(nameFirstLetters);         // [J, M, P, O]
-console.log(toUpperCaseNames);         
+console.log(toUpperCaseNames);        
+
+console.clear();
  
 let n1 = [1, 11, 111];
 let n2 = [2, 22, 222, 2222];
@@ -118,4 +120,30 @@ console.log(products);      // reikalingi produktai: agurkas, pomidoras, svoguna
 
 console.log('------------');
 
+console.log(texts); // [agurkas, pomidoras, svogunas, paprika]
+texts.reverse();
+console.log(texts); // [paprika, svogunas, pomidoras, agurkas]
 
+// concat - sujungia masyvus
+
+const c1 = [1, 11];
+const c2 = [2, 22];
+const c3 = [3, 33];
+const c4 = [4, 44];
+
+const c12 = c1.concat(c2);  
+console.log(c12);       // [1, 11, 2, 22]
+
+const c34 = c3.concat(c4);
+console.log(c34);       // [3, 33, 4, 44]
+
+const c123 = c1.concat(c2).concat(c3);
+console.log(c123);      // [1, 11, 2, 22, 3, 33]
+
+const c1234 = c1.concat(c2, c3, c4);
+console.log(c1234);     // [1, 11, 2, 22, 3, 33, 4, 44]
+
+const c111 = c1.concat(c1, c1);
+console.log(c111);      // [1, 11, 1, 11, 1, 11]
+
+console.clear()
