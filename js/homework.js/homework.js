@@ -298,29 +298,29 @@ function capitalizeWord(word) {
   return word;
 }
 */
-/*
+
 let current = '';
 function updateLight(current) {
 
-  if ('green')
+  if (current  === 'green')
     {
       return 'yellow';
     }
    
-  if ('yellow')
+  if (current === 'yellow')
     {
       return "red";
     }
 
-  ('red')
+  if (current === 'red')
     {
       return 'green';
     }
 }
 
 
-console.log(updateLight('yellow'));
-*/
+console.log(updateLight('red'));
+
 
 
 

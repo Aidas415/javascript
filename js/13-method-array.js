@@ -147,3 +147,120 @@ const c111 = c1.concat(c1, c1);
 console.log(c111);      // [1, 11, 1, 11, 1, 11]
 
 console.clear()
+
+// splice "ištrina masyvą nuo nurodytos pozicijos. galima nurodyti kiek narių ištrinti(antru dėmeniu)"
+
+const h = [11, 22, 33, 44, 55];
+console.log(h);         // [11, 22, 33, 44, 55]
+h.splice(3);
+console.log(h);         // [11, 22, 33]
+const h1 = [11, 22, 33, 44, 55];
+h1.splice(0, 3);        
+console.log(h1);        // [44, 55]
+const h3 = [11, 22, 33, 44, 55];
+h3.splice(1, 3)         
+console.log(h3);        // [11, 55]
+const h4 = [11, 22, 33, 44, 55];
+h4.splice(2, 2);
+console.log(h4);        // [11, 22, 55]
+
+//           0   1   2   3   4
+const h5 = [11, 22, 33, 44, 55];
+h5.splice(1, 2);
+console.log(h5);        // [11, 44, 55] 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+console.log('########################');
+
+// fill (užpildo masyvą)
+const defoult5 = [0, 0, 0, 0, 0];
+const defoult7 = Array(7).fill(99); // [99, 99, 99, 99, 99, 99, 99]
+console.log(defoult7);
+
+const zeros = Array(10);
+const zeros2 = Array(10).fill(0);
+console.log(zeros);                 // [     10 tuščių vietų    ]      
+console.log(zeros2);                // [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+
+// every
+
+const trees = ['uosis', 'egle', 'azuolas', 'tuopa'];  
+const allTreesValid = trees.every(s => s.length > 0);
+console.log(allTreesValid);
+
+const allTreesNamesSize5 = trees.every(s => s.length === 5);
+console.log(allTreesNamesSize5);
+
+// some
+//const someTreesValid = ['uosis', 'egle', 'azuolas', 'tuopa'];  
+//const someTreesValid = trees.some(s => s.length > 0);
+//console.log(allTreesValid);
+
+//const someTreesNamesSize5 = trees.some(s => s.length === 5);
+//console.log(allTreesNamesSize5);
+
+
+
+
+
+
+
+
+
+// reduce
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
