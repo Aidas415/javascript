@@ -11,7 +11,7 @@ const a4 = [4, 44, 444];
 
 
 const b12 = [...a1, ...a2]
-console.log(b12)
+console.log(b12)            // [1, 11, 111, 2, 22, 222]
 
 const b423 = [...a4, ...a2, ...a3]
 console.log(b423)
@@ -37,11 +37,22 @@ const p1 = {a: 1};
 const p2 = {a: 2};
 const p3 = {a: 3};
 
-
-
+console.log('------------')
 
 const marks = [10, 2, 8, 4, 6];
 const [first, second, ...rest] = marks
+console.log(first);
+console.log(second);
+console.log(rest);
+
+const names = ['Jonas', 'Maryte', 'Petras', 'Ona'];
+const n1 = names[0];
+const n2 = names[1];
+const n34 = names.slice(2); 
+
+console.log(n1);            // Jonas
+console.log(n2);            // Maryte
+console.log(n34);           // ['Petras', 'Ona'] 
 
 
 

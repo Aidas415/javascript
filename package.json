@@ -20,6 +20,7 @@
     "sort": "node --watch ./js/19-sort.js",
     "reduce": "node --watch ./js/20-reduce.js",
     "...": "node --watch ./js/21-destrukturizavimas-rest.js",
+    "switch": "node --watch ./js/22-switch.js",
     "arrow": "node --watch ./js/14-arrow.js",
     "biggest": "node --watch ./js/task/biggest-number.js",
     "homework": "node --watch ./js/homework.js/homework.js",

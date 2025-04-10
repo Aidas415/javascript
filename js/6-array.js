@@ -36,7 +36,7 @@ console.log(empty.lenth);
 console.log(luckyNumbers.length);
 console.log(students.length);
 
-console.clear();
+//console.clear();
 
 const numbers = [10, 2, 8, 4, 6];
 const totalSum1 = numbers[0] + numbers[1] + numbers[4] + numbers[3] 
