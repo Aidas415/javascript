@@ -5,7 +5,7 @@ const person = {
     isMarried: true,
 };
 
-//const keys = ['age', 'isMarried', 'name'];
+// 1)būdas: const keys = ['age', 'isMarried', 'name'];
 const keys = Object.keys(person);
 console.log(keys);              // ['name', 'age', 'isMarried'] 
 
@@ -18,7 +18,7 @@ for (const key of keys){            //99
 }                                   // Jonas
 
 
-// for-in leidžia viską supaprastinti
+// 2)būdas: for-in leidžia viską supaprastinti
 
 for (const key in person){          // Jonas
     console.log(person[key]);       // 99

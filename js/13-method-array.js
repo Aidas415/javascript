@@ -172,7 +172,7 @@ console.log(h5);        // [11, 44, 55]
 // rodyklinė funkcija
 const f = s => s[0];
 
-// MAP -
+// MAP - ciklo būdu atlieka nurodytus veiksmus su kiekvienu nariu 
 const k = [10, 2, 8, 4, 6];
 const k2 = [];
 
@@ -209,42 +209,90 @@ console.log(k7);        // [11, 3, 9, 5, 7]
 
 const dict = ['pomidoras', 'agurkas', 'bulve'];
 const dict2 = dict.map(w => w[0]);
-console.log(dict2);
+console.log(dict2);     // ['p', 'a', 'b']
 
 const dict3 = dict.map(w => w.length);
-console.log(dict3);
+console.log(dict3);     // [9, 7, 5]
 
 const dict4 = dict.map(w => w[0].toUpperCase() + w[1] + w[2] + ' ' + w.length);
-console.log(dict4);
+console.log(dict4);     // ['Pom 9', 'Agu 7', 'Bul 5']
 
-const dict5 = dict.map(w => w[0]);
-console.log(dict5);
-
+console.log('------------');
 
 
+const people = [
+    {name: 'Jonas', age: 99},
+    {name: 'Maryte', age: 88},
+    {name: 'Peras', age: 77},
+    {name: 'Ona', age: 66},
+];
+const people100 = people.map(p => `'${p.name} liko ${100 - p.age} metai.'`);
+console.log(people100);     // "Jonas liko 1 metai."
+                            // "Maryte liko 12 matai."    
+                            // "Petras liko 23 metai."
+                            // "ona liko 34 metai."
+
+const peopleNames = people.map(person => person.name);
+console.log(peopleNames);   // ['Jonas', 'Maryte", 'Petras", 'Ona']
 
 
+const peopleAges = people.map(person => person.age);
+console.log(peopleAges);    // [99, 88, 77, 66]
+
+console.clear();
+
+console.log('***********');
 
 
+const peopleMarried = people.map(person => {
+    person.isMarried = true;
+    person.luckyNumber = 13;
+    return person;
+});
+console.log(peopleMarried);
 
 
+console.log('***********');
 
+const p = [10, 2, 8, 4, 6];
+const p5 = [];
 
+for (const n of p){
+    if(n > 5){
+        p5.push(n);
+    }
+}
+console.log(p5);            // [6, 8, 10]
 
+         // filter "ciklo būdu pasilieka tai, kas tenkina sąlygą"
 
+const p6 = p.filter(n => n > 6);
+console.log(p6);            // [8, 10]
 
+const p7 = p.filter(n => n < 7);
+console.log(p7);            // [2, 4, 6]
 
+const p8 = p.filter(n => n > 2 && n < 8);
+console.log(p8);            // [4, 6]
 
+                    // filtar su tekstais
 
+const text5 = ['labas', '', 'rytas', '', 'Lietuva'];
+const text5Updated = text5.filter(t => t.length > 0);
+console.log(text5Updated);  // ['labas', 'rytas', 'Lietuva']
+// arba trumpiau
+const text5Updated1 = text5.filter(t => t);
+console.log(text5Updated1);  // ['labas', 'rytas', 'Lietuva']
+// arba išfiltruoti žodžius
+const text5Updated2 = text5.filter(t => t === 'rytas');
+console.log(text5Updated2);  // ['rytas']
 
+console.clear();
 
+console.log('--------------')
 
+           // fill užpildo masyvą "n" kartų nurodyta reikšme.
 
-/*
-
-console.log('########################');
-
-// fill (užpildo masyvą)
 const defoult5 = [0, 0, 0, 0, 0];
 const defoult7 = Array(7).fill(99); // [99, 99, 99, 99, 99, 99, 99]
 console.log(defoult7);
@@ -254,25 +302,43 @@ const zeros2 = Array(10).fill(0);
 console.log(zeros);                 // [     10 tuščių vietų    ]      
 console.log(zeros2);                // [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
+const neegativees = Array(4).fill(false);
+console.log(neegativees);           // [false, false, false, false]
 
-// every
+const emptySpaces = Array(6).fill('');
+console.log(emptySpaces);           // ['', '', '', '', '', '']
+
+const labas5 = Array(5).fill('labas');
+console.log(labas5);           // ['labas', 'labas', 'labas', 'labas', 'labas']
+
+// arba atnaujina, rašo ant viršaus naują reikšmę.
+
+const demo = [10, 2, 8, 4, 6];
+console.log(demo);             // [10, 2, 8, 4, 6] 
+demo.fill(777);
+console.log(demo);             // [777, 777, 777, 777, 777] 
+
+console.clear();
+
+        // every pagal užklausą patikrina bendrą masyvo narių reikšmę
 
 const trees = ['uosis', 'egle', 'azuolas', 'tuopa'];  
 const allTreesValid = trees.every(s => s.length > 0);
-console.log(allTreesValid);
+console.log(allTreesValid);         // true
 
 const allTreesNamesSize5 = trees.every(s => s.length === 5);
-console.log(allTreesNamesSize5);
+console.log(allTreesNamesSize5);    // false
 
-// some
-//const someTreesValid = ['uosis', 'egle', 'azuolas', 'tuopa'];  
-//const someTreesValid = trees.some(s => s.length > 0);
-//console.log(allTreesValid);
+        // some pagal užklausą patikrina nors vieno masyvo nario reikšmę
+  
+const someTreesValid = trees.some(s => s.length > 5);
+console.log(allTreesValid);         // true
 
-//const someTreesNamesSize5 = trees.some(s => s.length === 5);
-//console.log(allTreesNamesSize5);
+const someTreesNamesSize5 = trees.some(s => s.length === 5);
+console.log(someTreesNamesSize5);   // true
 
-
+const someTreesNamesSize10 = trees.some(s => s.length === 10);
+console.log(someTreesNamesSize10);   // false
 
 
 
@@ -282,7 +348,7 @@ console.log(allTreesNamesSize5);
 
 // reduce
 
-*/
+
 
 
 
