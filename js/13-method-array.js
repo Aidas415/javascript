@@ -169,20 +169,56 @@ const h5 = [11, 22, 33, 44, 55];
 h5.splice(1, 2);
 console.log(h5);        // [11, 44, 55] 
 
+// rodyklinė funkcija
+const f = s => s[0];
+
+// MAP -
+const k = [10, 2, 8, 4, 6];
+const k2 = [];
+
+for(const n of k) {
+    k2.push(n * 2);
+}
+console.log(k2);        // [20, 4, 16, 8, 12]
+
+console.log('--------------')
+
+function triple(n) {
+    return n * 3;
+}
+const k3 = k.map(triple);
+console.log(k3);        // [30, 6, 24, 12, 18]
+
+const quadro = n => n * 4;
+const k4 = k.map(quadro); 
+console.log(k4);        // [40, 8, 32, 16, 24]
 
 
+const k5 = k.map(n => n * 5);
+console.log(k5);        // [50, 10, 40, 20, 30]
 
 
+const k6 = k.map(n => n);
+console.log(k6);        // [10, 2, 8, 4, 6]
 
 
+const k7 = k.map(n => n +1);
+console.log(k7);        // [11, 3, 9, 5, 7]
 
+// su tekstais
 
+const dict = ['pomidoras', 'agurkas', 'bulve'];
+const dict2 = dict.map(w => w[0]);
+console.log(dict2);
 
+const dict3 = dict.map(w => w.length);
+console.log(dict3);
 
+const dict4 = dict.map(w => w[0].toUpperCase() + w[1] + w[2] + ' ' + w.length);
+console.log(dict4);
 
-
-
-
+const dict5 = dict.map(w => w[0]);
+console.log(dict5);
 
 
 

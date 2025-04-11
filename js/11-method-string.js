@@ -359,9 +359,9 @@ console.log(capitalizeWord(word));
 
 function capitalizeWord(word) 
 {
-    let ward = ''
-    'word'.trim();
-    'word[0]'.toUpperCase();
+   
+    word.trim();
+    word[0].toUpperCase();
     return word;
 }
 
