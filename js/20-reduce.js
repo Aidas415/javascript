@@ -1,5 +1,5 @@
 /*
-reduce - supaprastinti, sumažinti kiekį
+reduce - supaprastinti, sumažinti veiksmų kiekį
 */
 
 const marks =[10, 2, 8, 4, 6];

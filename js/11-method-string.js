@@ -237,7 +237,7 @@ console.log('KNBS 65DFS; 585F'.toLowerCase());  // knbs 65dfs 585f
 
 console.log('------');
 
-//slice
+//slice   (dirba ir su masyvu)
 console.log('\nslice ("Atkerpa" teksto atkarpą)');
 console.log('pomidoras'.slice());           // pomidoras
 console.log('pomidoras'.slice(0));          // pomidoras

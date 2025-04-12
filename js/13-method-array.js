@@ -348,20 +348,30 @@ console.log(someTreesNamesSize10);   // false
 
 // reduce
 
+function integrate(coefficient, exponent) {
+    return coefficient / (exponent + 1) + 'x' + '^' + (exponent + 1);  
+   }
+
+const coefficient0 = 3;
+const exponent0 = 2;
+console.log(integrate(coefficient0, exponent0));
+
+function derive(coefficient,exponent) {
+    return (coefficient * exponent) +'x' + '^' + (exponent - 1) + (coefficient, exponent);
+  }
+
+const coefficient = 7;
+const exponent = 8;
+console.log(derive(coefficient, exponent));
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+function checkForFactor (base, factor) {
+    if (base % factor === 0){
+      return true;
+    } else {
+      return false;
+    }
+  }
 
 
 
