@@ -81,21 +81,44 @@ function derive(coefficient,exponent) {
     return (coefficient * exponent) +'x' + '^' + (exponent - 1) + (coefficient, exponent);
   }
 
-const coefficient = 7;
-const exponent = 8;
-console.log(derive(coefficient, exponent));
-
-console.log('------------');
-function checkForFactor (base, factor) {
-    if (base % factor === 0){
-      return true;
-    } else {
-      return false;
-    }
-  }
-
-  function checkForFactor (base, factor) {
-    return base % factor === 0;
-  }
   console.log('------------');
+
+
+
+  let marks = [4, 1, 7, 1, 5, 2];
+  function getAverage(marks){
+    let sum6 = 0;
+    for (let i = 0; i < marks.length; i++){
+      sum6 += marks[i];  
+    }
+    console.log(sum6);
+
+   // return Math.round(sum);
+     return sum6;
+  }
+
+
+
+/*
+console.log(getAverage(marks));
+console.log();
+for(const sum of marks){
+  
+  console.log(sum);
+}
+*/
+
+
+
+//return Math.round(sum);
+
+function grow(x){
+    let result = 1;
+    for (let i = 0; i < x.length; i++){
+      result *= x[i];
+    }
+  return result;
+  }
+  return result;
+  console.log(result);
 

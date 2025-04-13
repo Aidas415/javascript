@@ -62,11 +62,21 @@ console.log(multiply(2, -Infinity));
 console.log(multiply(-Infinity, 3));
 console.log(multiply(-Infinity, -Infinity));
 
+const array = [2, 5, 3, 4];
+let multi = 1;
+for (let i = 0; i < array.length; i++){
+    multi *= array[i];
+    return multi;
+};
+console.log(multi);
 
-
-
-
-
+function grow(x){
+    let result = 1;
+    for (let i = 0; i < x.length; i++){
+      result *= x[i];
+    }
+  return result;
+  }
 
 
 

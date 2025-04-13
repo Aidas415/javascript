@@ -101,7 +101,7 @@ for (let i = 1; i <= 10; i++) {
     console.log(`${n} * i = ${n * i}`);
 }
 
-console.clear();
+//console.clear();
 
 const marks1 = [10, 2, 8, 4, 6]
 let sum1 = 0;

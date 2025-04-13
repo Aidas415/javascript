@@ -30,7 +30,7 @@
     "interval": "node --watch ./js/task/interval-sum.js",
     "multitable": "node --watch ./js/task/multi-table.js",
     "task": "node --watch ./js/task.js",
-    "for": "node --watch ./js/task/for.js",
+    "for": "node --watch ./js//8-for.js",
     "names": "node --watch ./js/task/names-split-join.js",
     "marksaverage": "node --watch ./js/task/marksaverage.js",
     "typeof": "node --watch ./js/task/typeof.js",

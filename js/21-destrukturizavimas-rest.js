@@ -183,7 +183,7 @@ for (const {name, age} of students){
     console.log(result);
 };
 
-console.clear();
+//console.clear();
 
 const numbers = [
     [0],
@@ -217,18 +217,39 @@ for (const [first, ...rest] of numbers) {
 
 console.clear();
 
+// MIN. minimumo suradimas (bet ne masyve)
+function min(...list) {
+    let minimum = Infinity;
+    for (const number of list){
+        if (number < minimum) {
+            minimum = number;
+        }
+    }
+    return minimum;
+}
 
+console.log(min(1));                                // 1
+console.log(min(1, 2, 3));                          // 1
+console.log(min(-1, -2, -3));                       // -3
+console.log(min(-1, -2, -3, -2, -3, -2, -3, -2,));  // -3
 
+// su masyvais. 
 
+console.log(min(1));                                // 1
+console.log(min(1, 2, 3));                          // 1
+console.log(min(-1, -2, -3));                       // -3
+console.log(min(-1, -2, -3, -2, -3, -2, -3, -2,));  // -3
 
+console.log('-------------');
 
+const ddd = [1, 2, 3];
+console.log(Math.min(...ddd));          // 1
+console.log(Math.min(1, 2, 3));         // 1
+console.log(Math.max(...ddd));          // 3
+console.log(Math.max(1, 2, 3));         // 3
 
-
-
-
-
-
-
-
-
-
+const f = [...ddd];
+console.log(f);                         // [1, 2, 3]
+console.log(ddd);                       // [1, 2, 3]
+console.log(...ddd);                    // 1, 2, 3
+console.log(1, 2, 3);                   // 1, 2, 3

@@ -28,7 +28,3 @@ console.log(marksAverage(true));
 
 
 
-
-
-
-
