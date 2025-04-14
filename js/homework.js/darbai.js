@@ -91,13 +91,13 @@ function derive(coefficient,exponent) {
     for (let i = 0; i < marks.length; i++){
       sum6 += marks[i];  
     }
-    console.log(sum6);
+   // console.log(getAverage(sum6));
 
    // return Math.round(sum);
      return sum6;
   }
-
-
+//getAverage(marks);
+console.log(getAverage(marks));
 
 /*
 console.log(getAverage(marks));
@@ -119,6 +119,6 @@ function grow(x){
     }
   return result;
   }
-  return result;
-  console.log(result);
+const x5 = [2, 3, 5, 6]
+console.log(grow(x5));
 

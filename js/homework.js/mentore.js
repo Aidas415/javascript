@@ -222,7 +222,7 @@ function findDifference(a, b)
 console.log(findDifference(a, b));
 
 
-
+Math.round(...A1.toExponential.apply.apply.apply.apply.apply.apply.apply.applyz)
 
 
 
