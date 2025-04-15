@@ -68,6 +68,7 @@ for (const s of text1) {
 }
 console.log(symbols1);     // {p: 2, a: 2, j: 1, u: 1, s: 1}
 
+
 let max1 = 0;
 for(const s in symbols1) {
     if (symbols1[s] > max1) {

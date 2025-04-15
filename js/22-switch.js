@@ -1,5 +1,5 @@
-/*
-const day = 1;
+
+const day = 5;
 let dayName = '';
 
 if (day === 1){
@@ -11,7 +11,7 @@ if (day === 1){
 }else if (day === 4){
     dayName = 'ketvirtadienis';
 }else if (day === 5){
-    dayName = 'penktadienis';
+    dayName = 'penktadienis';                       // penktadienis
 }else if (day === 6){
     dayName = 'sestadienis';
 }else if (day === 7){
@@ -19,9 +19,9 @@ if (day === 1){
 }else if (day > 7){
     dayName = 'tokios savaites dienos nera';
 }
-consol.consol(dayName)                                                                   
-*/
+console.log(dayName);                                                                   
 
+console.log('-/-/-/-/-/-');
 // If galima rašyti su "switch"
 
 const d = 8;
@@ -50,7 +50,7 @@ switch (d) {
         weekdayName = 'sekmadienis';
         break; 
     default: // 'default' yra savotiskas 'else'
-        weekdayName = 'tokios savaites dienos nera'
+        weekdayName = 'tokios savaites dienos nera'  // tokios dienos savaiteje nera
         break; 
 }
 console.log(weekdayName);
@@ -67,7 +67,7 @@ if (day2 === 1 || day2 === 2 || day2 === 3 || day2 === 4 || day2 === 5){
 }else {
     day2Name = 'tokios dienos savaiteje nera'
 }
-console.log(day2Name);
+console.log(day2Name);                               // darbo diena
 
 console.log('-------------');
 
@@ -80,25 +80,25 @@ switch (day3) {
         break;
     case 2:
         day3Name = 'darbo diena';
-        break  
+        break;  
     case 3:
         day3Name = 'darbo diena';
-        break
+        break;
     case 4:
         day3Name = 'darbo diena';
-        break
+        break;
     case 5:
         day3Name = 'darbo diena';
-        break
+        break;
     case 6:
-        day3Name = 'savaitgalis';
-        break
+        day3Name = 'savaitgalis';                    // savaitgalis
+        break;
     case 7:
         day3Name = 'savaitgalis';
-        break
+        break;
     default:
         day3Name = 'tokios dienos savaiteje nera';
-        break
+        break;
 }
 console.log(day3Name);
 
@@ -109,7 +109,7 @@ const day4 = 1;
 let day4Name = '6';
 
 switch (day4) {
-    case 1:
+    case 1:                                          // darbo diena
     case 2:
     case 3:
     case 4:
@@ -137,7 +137,7 @@ console.log('-/-/-/-/-/-');
 // 5) ismaisyti
 // 6) gerti
 
-const teaStep = 1;
+const teaStep = 3;
 
 switch (teaStep) {
     case 1:
@@ -147,7 +147,7 @@ switch (teaStep) {
         console.log('i puodeli ideti arbatos');
         break;
     case 3:
-        console.log('isideti cukraus/saldikliu');
+        console.log('isideti cukraus / saldikliu');     // isideti cukraus / saldikliu
         break;
     case 4:
         console.log('uzpilame vandeniu');
@@ -161,14 +161,14 @@ switch (teaStep) {
 
 console.log('-------------');
 
-const stop = 'Parko';
+const stop = 'Rudens';
 switch (stop) {
     case 'Parko': console.log('Parko');
     case 'Geniu': console.log('Geniu');
     case 'Tremtiniu': console.log('Tremtiniu');
-    case 'Rudens': console.log('Rudens');
-    case 'Mindaugo tiltas': console.log('Mindaugo tiltas');
-    case 'Zaliasis tiltas': console.log('Zaliasis tiltas');
+    case 'Rudens': console.log('Rudens');                      // Rudens
+    case 'Mindaugo tiltas': console.log('Mindaugo tiltas');    // Mindaugo tilto
+    case 'Zaliasis tiltas': console.log('Zaliasis tiltas');    // Zaliasis tiltas
         break;
     case 'Lvovo': console.log('Lvovo');        
     case 'Vasaros': console.log('Vasaros');
@@ -180,8 +180,8 @@ switch (stop) {
 }
 console.log('   ---')
 
-const stop2 = 'Vasaros';
-switch (stop) {
+const stop2 = 'Rudens 2';
+switch (stop2) {
     case 'Parko': console.log('Parko');
     case 'Geniu': console.log('Geniu');
     case 'Tremtiniu': console.log('Tremtiniu');
@@ -191,23 +191,11 @@ switch (stop) {
         break;
     case 'Lvovo': console.log('Lvovo');        
     case 'Vasaros': console.log('Vasaros');
-    case 'Rudens 2': console.log('Rudens 2');
-    case 'Tremtiniu 2': console.log('Tremtiniu 2');
-    case 'Geniu 2': console.log('Geniu 2');
-    case 'Parko 2': console.log('Parko 2');
+    case 'Rudens 2': console.log('Rudens 2');                   // Rudens 2
+    case 'Tremtiniu 2': console.log('Tremtiniu 2');             // Tremtiniu 2
+    case 'Geniu 2': console.log('Geniu 2');                     // geniu 2
+    case 'Parko 2': console.log('Parko 2');                     // Parko 2
         break;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 

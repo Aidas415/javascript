@@ -122,3 +122,53 @@ function grow(x){
 const x5 = [2, 3, 5, 6]
 console.log(grow(x5));
 
+//Namu darbai
+//parasyti funkcija, kuri apskaiciuotu kiek kartu tam tikra raide pasikartoja zodyje arba sakinyje.
+// zodyje
+
+const word = 'pasikiskekopusteliaudamas';
+const letterCount = {};
+for(const r of word){
+  if (letterCount[r]){
+    letterCount[r]++;
+  }
+  else {
+    letterCount[r] = 1;
+  }
+}
+console.log(letterCount);
+
+// sakinyje
+
+const sentence = 'idomu, kokiu raidziu bus daugiausia siame sakinyje'
+let letterCount1 = {};
+for (const r of sentence) {
+  if (letterCount1[r]) {
+    letterCount1[r]++;
+  }
+  else {
+    letterCount1[r] = 1;
+  }
+}
+
+console.log(letterCount1);
+
+// funkcija
+
+function letterCount2(word1){
+  let letterCount2 = {};
+  for (const r1 of word1) {
+    if (letterCount2[r1]) {
+      letterCount2++;
+    }
+    else {
+      letterCount2 = 1;
+    }
+  }
+}
+
+let word1 = 'Jau saulelė vėl atkopdama budina svietą'
+console.log(letterCount2(word1))
+
+
+
