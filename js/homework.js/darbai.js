@@ -170,5 +170,50 @@ function letterCount2(word1){
 let word1 = 'Jau saulelė vėl atkopdama budina svietą'
 console.log(letterCount2(word1))
 
+console.clear();
+
+function kartotiniai(x, y) {
+  const skaiciai = [];
+     for (let i = x; i <= y; i++) {
+      if (i % 3 === 0) {
+       skaiciai.push(i);
+      }
+  }
+  return skaiciai;
+}
+
+const a1 = 0;
+const b1 = 50; 
+console.log(kartotiniai(a1, b1));
+
+//
+
+function getAverage(marks){
+let sum = 0;
+  for(i = 0; i < marks.length; i++){
+    sum = sum + marks[i];
+    i++
+    console.log(sum);
+  }
+  //return math.round(result / marks.length);
+}
+const pazym = [4, 3, 6, 8, 5]
+//console.log(getAverage(pazym));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
