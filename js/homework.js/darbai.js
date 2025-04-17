@@ -83,33 +83,6 @@ function derive(coefficient,exponent) {
 
   console.log('------------');
 
-
-
-  let marks = [4, 1, 7, 1, 5, 2];
-  function getAverage(marks){
-    let sum6 = 0;
-    for (let i = 0; i < marks.length; i++){
-      sum6 += marks[i];  
-    }
-   // console.log(getAverage(sum6));
-
-   // return Math.round(sum);
-     return sum6;
-  }
-//getAverage(marks);
-console.log(getAverage(marks));
-
-/*
-console.log(getAverage(marks));
-console.log();
-for(const sum of marks){
-  
-  console.log(sum);
-}
-*/
-
-
-
 //return Math.round(sum);
 
 function grow(x){
@@ -187,31 +160,79 @@ const b1 = 50;
 console.log(kartotiniai(a1, b1));
 
 //
+console.log('----****----')
 
 function getAverage(marks){
 let sum = 0;
-  for(i = 0; i < marks.length; i++){
+  for(let i = 0; i < marks.length; i++){
     sum = sum + marks[i];
     i++
-    console.log(sum);
+    //console.log(sum);
   }
-  //return math.round(result / marks.length);
+  return Math.round(sum / marks.length);
 }
-const pazym = [4, 3, 6, 8, 5]
-//console.log(getAverage(pazym));
+
+console.log(getAverage([2,2,2,2]),2);
+console.log(getAverage([1,2,3,4,5,]),3);
+console.log(getAverage([1,1,1,1,1,1,1,2]),1);
 
 
 
+const pazym = [4, 3, 6, 8, 5, 10]
+console.log(getAverage(pazym));
+
+console.log('---****----')
+
+function problem(x){
+  if (x !== typeof number) {
+    return Error
+  }
+  return 50 * x + 6
+}
+
+console.log(problem("hello"), "Error");
+console.log(problem(1), 56);
+console.log(problem(5), 256);
+console.log(problem(0), 6);
+console.log(problem(1.2), 66);
+console.log(problem(3), 156);
+console.log(problem("RyanIsCool"), "Error");
+console.log(problem(-3), -144);
+console.log(problem(""), "Error");
+console.log(problem(0.03), 7.5);
+///
+/*
+function contamination(text, char){ 
+  let a = char;
+  let newText = text.split('');
+  if (newText[i] === '' || a === '') {
+    return '';
+  }
+  else {
+    return newText.join('').replaceAll(newText[i], a);
+  }
+} 
+
+console.log(contamination("abc","z"), "zzz")
+console.log(contamination("","z"), "")
+console.log(contamination("abc",""), "")
+console.log(contamination("_3ebzgh4","&"), "&&&&&&&&")
+console.log(contamination("//case"," "), "      ")
+*/
+
+
+function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+  const la = laLigaGoals;
+  const co = copaDelReyGoals;
+  const ch = championsLeagueGoals;
+  return la + co + ch;
+}
 
 
 
-
-
-
-
-
-
-
+console.log(goals(0,0,0), 0)
+console.log(goals(43, 10, 5), 58);
+  
 
 
 

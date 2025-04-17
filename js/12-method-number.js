@@ -75,7 +75,7 @@ console.clear();
 
 // parseInt
 
-console.log('\nparseInt "Iš teksto tipo reikšmės paima sveikus skaičius. tekste juos mato tik iš priekio". ');
+console.log('\nparseInt "Iš teksto tipo reikšmės paima sveikus skaičius. tekste juos mato tik iki kablelio". ');
 console.log(parseInt('65'));                // 65
 console.log(parseInt('65.314'));            // 65
 console.log(parseInt('-65'));               // -65 
@@ -145,5 +145,5 @@ console.log(3.14. toFixed(3));          // 3.140
 console.log(3.14. toFixed(4));          // 3.1400
 console.log(3.14. toFixed(5));          // 3.14000
 
-
+marks.reduce()
 
