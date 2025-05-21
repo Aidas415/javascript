@@ -199,7 +199,7 @@ for (let i = 0; i < 1000000; i++)
         counts[index]++
     }
     
-console.log(counts);
+//console.log(counts);
 
 console.log('-------------')
 
@@ -211,7 +211,7 @@ for (let i = 0; i < 1000000; i++)
         counts2[index]++
     }
     
-console.log(counts2);
+//console.log(counts2);
 
 
 

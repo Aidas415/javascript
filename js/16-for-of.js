@@ -5,7 +5,7 @@ let sum = 0;
         const mark = marks[i];
         sum += mark;
     }
-console.log(sum);
+console.log(sum);                                       // 30
 
 
 
@@ -14,7 +14,7 @@ let sum1 = 0;
     {
         sum1 += mark;
     }    
-console.log(sum1);
+console.log(sum1);                                      // 30
 
 const names = ['Jonas', 'Maryte', 'Petras', 'Ona'];
 const nameSizes = [];
@@ -22,12 +22,15 @@ const nameSizes = [];
     {
         nameSizes.push
         ({
-            name: name,
-            firstLetter: name[0],
-            lastLetter: name.at(-1),
-            size: name.length,
-            reverse: name.split('').reverse().join(''),
+            name: name,                                 // 'Jonas' // 'Maryte'  // 'Petras'  // 'Ona'
+            firstLetter: name[0],                       // 'J '    // 'M'       // 'P'       // 'O'
+            lastLetter: name.at(-1),                    // 's'     // 'e'       // 's'       // 'a'
+            size: name.length,                          //  5      // 6         // 6         // 3
+            reverse: name.split('').reverse().join(''), // 'sanoJ' // 'etyraM'  // 'sarteP'  // 'anO'
         })
         nameSizes.push(name.length);
     }    
-console.log(nameSizes);
+console.log(nameSizes);                                 // 3
+
+
+

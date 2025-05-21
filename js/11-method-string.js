@@ -390,6 +390,12 @@ console.log(summer6)                        // v-s-r-
 
 //console.clear();
 
+console.log('LABAS'.toLowerCase())
+
+
+
+
+
 
 
 

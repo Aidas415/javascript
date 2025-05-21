@@ -53,9 +53,9 @@ for (let i = 0; i < names.length; i++)
     }
 console.log(nameSize);                 // [5, 6, 6, 3]
 console.log(nameFirstLetters);         // [J, M, P, O]
-console.log(toUpperCaseNames);        
+console.log(toUpperCaseNames);         // ['JONAS', 'MARYTE', 'PETRAS', 'ONA']
 
-console.clear();
+//console.clear();
  
 let n1 = [1, 11, 111];
 let n2 = [2, 22, 222, 2222];
@@ -82,7 +82,7 @@ numbers2.push(9);
 console.log(numbers2);                 // [10, 2, 8, 4, 6, 9]
 
 // pop() Pašalina sąrašo narį. Po vieną nuo galo.
-// Bei gr1žina tai, ką pašalino
+// Bei grąžina tai, ką pašalino
 const g1 = numbers2.pop();
 const g2 = numbers2.pop();
 console.log(numbers2, g1, g2);          // [10, 2, 8, 4] 9 6
@@ -108,7 +108,7 @@ console.log(magic.includes(55));        // true
 console.log(magic.indexOf(5));          // -1
 console.log(magic.indexOf(55));         // 4
 
-console.clear();
+//console.clear();
 
 console.log('------------');
 

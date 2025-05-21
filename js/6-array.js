@@ -131,4 +131,29 @@ sentence5 += dictionary[++j] + ', ';
 sentence5 += dictionary[++j] + '.';
 console.log(sentence5);
 
-//console.clear();
+console.clear();
+
+function reversas(masyvas) {
+    const masyv = masyvas + '';
+    const mas = masyv.split('');
+    let newArray = [];
+    for (let i = mas.length - 1; i >= 0; i--) {
+        newArray.push(parseInt(mas[i]));
+    }
+    return newArray;
+}
+
+let masyvas = 235780;
+console.log(reversas(masyvas));
+
+
+
+
+
+
+
+
+
+
+
+

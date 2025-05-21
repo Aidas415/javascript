@@ -50,7 +50,7 @@ console.log('---------------')
 
 
 
-
+console.log('-----------------')
 
 function solution(a, b){
     let a1 = a;
@@ -68,7 +68,7 @@ function solution(a, b){
 console.log(solution('12', '256'))
 let a = 12;
 let b = 256;
-
+console.log('--------------')
 function integrate(coefficient, exponent) {
     return coefficient / (exponent + 1) + 'x' + '^' + (exponent + 1);  
    }
@@ -112,6 +112,7 @@ for(const r of word){
 console.log(letterCount);
 
 // sakinyje
+console.log('-------------')
 
 const sentence = 'idomu, kokiu raidziu bus daugiausia siame sakinyje'
 let letterCount1 = {};
@@ -119,23 +120,22 @@ for (const r of sentence) {
   if (letterCount1[r]) {
     letterCount1[r]++;
   }
-  else {
-    letterCount1[r] = 1;
-  }
+  
 }
 
 console.log(letterCount1);
 
 // funkcija
+console.log('-------------')
 
 function letterCount2(word1){
-  let letterCount2 = {};
+  let Count2 = {};
   for (const r1 of word1) {
-    if (letterCount2[r1]) {
-      letterCount2++;
+    if (Count2[r1]) {
+      Count2++;
     }
     else {
-      letterCount2 = 1;
+      Count2 = 1;
     }
   }
 }
@@ -143,7 +143,7 @@ function letterCount2(word1){
 let word1 = 'Jau saulelė vėl atkopdama budina svietą'
 console.log(letterCount2(word1))
 
-console.clear();
+//console.clear();
 
 function kartotiniai(x, y) {
   const skaiciai = [];
@@ -200,25 +200,6 @@ console.log(problem("RyanIsCool"), "Error");
 console.log(problem(-3), -144);
 console.log(problem(""), "Error");
 console.log(problem(0.03), 7.5);
-///
-/*
-function contamination(text, char){ 
-  let a = char;
-  let newText = text.split('');
-  if (newText[i] === '' || a === '') {
-    return '';
-  }
-  else {
-    return newText.join('').replaceAll(newText[i], a);
-  }
-} 
-
-console.log(contamination("abc","z"), "zzz")
-console.log(contamination("","z"), "")
-console.log(contamination("abc",""), "")
-console.log(contamination("_3ebzgh4","&"), "&&&&&&&&")
-console.log(contamination("//case"," "), "      ")
-*/
 
 
 function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
@@ -228,11 +209,165 @@ function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
   return la + co + ch;
 }
 
+const Q7 = 841.5841584158417;
+const touareg = 1071.4285714285713;
+const espace = 1086.9565217391305;
+
+function toliausiai(masinos){
+  let masina = '';
+  let tolis = 0;
+  for (let i = 0; i < masinos.length; i++) {
+    masinos[i] > tolis;
+    masina = masinos[i] //> tolis;
+    console.log(masinos[i]);  
+  }
+  return masina;
+}
+
+console.log(toliausiai([Q7, touareg, espace]))
+//console.log(masina);
 
 
-console.log(goals(0,0,0), 0)
-console.log(goals(43, 10, 5), 58);
-  
+
+console.log(null == undefined);
+n = 10 * "2"
+console.log(n)
+
+console.log([1,2,3] + [4,5,6])
+console.log("hello")
+
+//let ab = 2;
+//let bc = "5";
+//console.log(bc-ab);
+
+let foo;
+console.log(foo);
+
+console.log(typeof NaN);
+
+
+let numbers = [1,2,3];
+
+numbers[10] = 11;
+
+console.log(numbers.length);
+
+
+function add(a, b = 5){
+  return a + b;
+}
+console.log(add(10));
+
+
+const A = 2;
+const B = "3";
+console.log(A + B)
+
+console.log(typeof[])
+
+
+function contamination(text, char){ 
+  if (text === '' || char === '') {
+    return '';
+  }
+  else {
+    text.split('')
+  }
+};
+
+
+
+
+function contamination(text, char){ 
+  if (text === '' || char === '') {
+    return '';
+  }
+  else {
+    return text.replaceAll(/[a-zA-Z0-9\s]/g, char);
+  }
+};
+
+console.log(contamination('abc', 'z'))
+/*
+function sc(floor){
+  let res = '';
+  if (floor <= 1) {
+    return '"", "good luck!"';
+  }
+  if (floor <= 6) {
+    for(let i = 0; i < floor - 2; i++) {
+      [i] = 'Aa~';
+      res = res + [i];
+      return res + ' Pa! Aa!, "good luck!"';
+    }
+  }
+  else if (floor > 6) {
+    for(let i = 0; i < floor - 1; i++) {
+      [i] = 'Aa~';
+      res = res + [i];
+      return res + ' Pa!, "good luck!"'
+    }
+  } 
+}
+
+
+console.log(sc(7))
+
+console.log(sc(2), "Aa~ Pa! Aa!", "good luck!");  
+console.log(sc(6), "Aa~ Aa~ Aa~ Aa~ Aa~ Pa! Aa!", "good luck!"); 
+console.log(sc(7), "Aa~ Aa~ Aa~ Aa~ Aa~ Aa~ Pa!", "good luck!"); 
+console.log(sc(10), "Aa~ Aa~ Aa~ Aa~ Aa~ Aa~ Aa~ Aa~ Aa~ Pa!", "good luck!"); 
+console.log(sc(1), "", "good luck!"); 
+console.log(sc(-1), "", "good luck!");
+
+
+function mystery() {
+  var results =
+    {sanity: 'Hello'};
+  return
+    results.sanity;
+}
+
+
+Test.assertDeepEquals(mystery(), {sanity: 'Hello'}, 'Mystery has not returned to sanity');
+*/
+
+
+// iš duotų vardų ištraukti jų inicialus iš didžiosios raidės ir atskirtus kableliu.
+function abbrevName(name){
+  const names = name.split(' ');
+  const firstName = names[0].toUpperCase(0);
+  const lastName = names[1].toUpperCase(0);
+  return firstName.at(0) + '.' + lastName.at(0);
+}
+    console.log(abbrevName("Sam Harris"), "S.H");
+    console.log(abbrevName("Patrick Feenan"), "P.F");
+    console.log(abbrevName("Evan Cole"), "E.C");
+
+console.clear();
+
+/*
+function removeEveryOther(arr){
+  let newArray = [];  
+  for (let i = 0; i < arr.length; i += 2) {
+    newArray = newArray.push(arr[i]);  
+  }console.log(newArray);
+    return newArray;
+}
+
+console.log(removeEveryOther(['Hello', 'Goodbye', 'Hello Again']),['Hello', 'Hello Again']);
+console.log(removeEveryOther([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]),[1, 3, 5, 7, 9]);
+console.log(removeEveryOther([[1, 2]]), [[1, 2]]);
+console.log(removeEveryOther([['Goodbye'], {'Great': 'Job'}]),[['Goodbye']]);
+*/
+
+
+
+
+
+
+
+
 
 
 
