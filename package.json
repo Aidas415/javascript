@@ -4,6 +4,7 @@
   "main": "index.js",
   "scripts": {
     "fancy": "node --watch ./js/homework.js/fancy-math.js",
+    "forworks": "node --watch ./js/tests-homeworks.js/for-works.js",
     "mentore": "node --watch ./js/homework.js/mentore.js",
     "methodarray": "node --watch ./js/methods.js/13-method-array.js",
     "money": "node --watch ./js/homework.js/money-format.js",
