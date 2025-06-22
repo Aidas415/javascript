@@ -362,14 +362,26 @@ console.log(removeEveryOther([['Goodbye'], {'Great': 'Job'}]),[['Goodbye']]);
 */
 
 
+console.log(typeof(2))
 
+m = 5 / 0
 
+console.log(m)
 
+n = '5' - 3
+console.log(n)
 
+console.log(0 === false)
 
+console.log(null == undefined)
 
+console.log(typeof NaN)
 
+const arr = ['a', 'b', 'c','d'];
+arr.reverse();
+console.log(arr);
 
-
-
+const barr = [1, 2, 3];
+const index = barr.indexOf(2);
+console.log(index);
 
