@@ -189,7 +189,7 @@ console.log(ageDigitsCount);
 const ageDigitsCount2 = age.toString().length;
 console.log(ageDigitsCount2);
 
-console.clear();
+// console.clear();
 
 const text = 'Pomidoras';
 const firstSymbol = text[0];

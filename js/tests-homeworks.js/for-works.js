@@ -21,14 +21,14 @@ console.log(sum);
 
 function intervalSum(start, end) 
 {
-    let sum = 0;
+    let sum1 = 0;
     for (let i = start; i <= end; i++) 
     {
-        sum += i;
+        sum1 += i;
     } 
-    console.log(sum)
+    console.log(sum1)
 };
-console.log(intervalSum(1,100));
+// console.log(intervalSum(1,100));
 console.log('---------');
 
 /* 3. Savaitės dienų sąrašas */
@@ -62,9 +62,9 @@ console.log("   6. Temperatūros patikra ar viršija 25 laipsnius");
 const temperaturos = [22, 25, 28, 31, 21, 27, 19];
 const savaitesDienos = ['Pirmadienis', 'Antradienis', 'Trečiadienis', 'Ketvirtadienis', 'Penktadienis', 'Šeštadienis', 'Sekmadienis']
 for (let i = 0; i < savaitesDienos.length; i++) {
-    console.log(`${i+1}.${savaitesDienos[i]} - ${temperaturos[i]}°C`)
+    console.log(`${i+1}.${savaitesDienos[i].replace('is', 'i')} - ${temperaturos[i]}°C`)
     if (temperaturos[i] > 25) {
-        console.log(`${savaitesDienos[i]} viršija 25°C karštį.`);
+        console.log(`${savaitesDienos[i].replace('is', 'i')} viršija 25°C karštį.`);
     } else {
         console.log(`Diena nėra labai karšta.`);
     }
@@ -134,5 +134,18 @@ console.log('---------');
 
 /* 10. Žvaigždutės piramidė */
 console.log("   10. Žvaigždutės piramidė, kiekvienoje paskesnėje eilutėje viena žvaigždute daugiau");
+let piramid = '';
+const zvaigzdutes = ['*', '*', '*', '*', '*', '*', '*'];
+for (let i = 0; i < 7; i++) {
+    piramid =  piramid + ' ' +
+     zvaigzdutes[i];
+    console.log( `${piramid}`);
+}
+
+
+
+
+
+
 
 
