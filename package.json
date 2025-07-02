@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "str": "node --watch ./js/tests-homeworks.js/string-metodai.js",
+    "skaiciu": "node --watch ./js/tests-homeworks.js/skaiciu-matemat-metodai.js",
     "fancy": "node --watch ./js/homework.js/fancy-math.js",
     "forworks": "node --watch ./js/tests-homeworks.js/for-works.js",
     "mentore": "node --watch ./js/homework.js/mentore.js",

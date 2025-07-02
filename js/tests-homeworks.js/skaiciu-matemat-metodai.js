@@ -35,7 +35,7 @@ console.log(objektas20);
  
 // objektas20 = []; //Uncaught TypeError: Assignment to constant variable.
  
-console.clear();
+// console.clear();
  
 // //PRIMITIVE DATA TYPE
 //NUMBER: sveikieji skaičiai, dešimtainiai skaičiai, Infinity, -Infinity, NaN
@@ -104,6 +104,8 @@ let num3 = num2.valueOf();
  
 console.log(num2, num3);
  
+// console.clear();
+
 // MATH metodai:
  
 // 1. Apvalinimo metodai:
@@ -180,7 +182,7 @@ console.log(Math.hypot(3, 4)); //5
  
 // 7. Trigonometrijos funkcijos
 // Math.sin(x); Math.cos(x); Math.tan(x);
-console.clear();
+// console.clear();
  
  
 //Stringą verčiam į skaičių
@@ -204,5 +206,5 @@ console.log(skaicius1);
  
 let num4 = JSON.parse(stringas)
 console.log(num4);
-console.clear();
+// console.clear();
  
